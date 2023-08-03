@@ -229,7 +229,7 @@ export enum HayyaWithMe {
   SUCCESS_PAGE_LABELS_YOU_ARE_DONE_SUMMARY = "success-page.labels.you-are-done-summary",
   SUCCESS_PAGE_LABELS_REFERENCE_NO = "success-page.labels.reference-no",
   SUCCESS_PAGE_LABELS_GO_TO_HAYYA_GUIDE = "success-page.labels.go-to-hayya-guide",
-  SUCCESS_PAGE_LABELS_VIEW_ACCOUNT = "success-page.labels.view-account"
+  SUCCESS_PAGE_LABELS_VIEW_ACCOUNT = "success-page.labels.view-account",
 
   CATEGORY_TOURIST_ENTRY_A1 = "category.labels.tourist-entry-a1",
   CATEGORY_GCC_RESIDENT_ENTRY_A2 = "category.labels.gcc-resident-entry-a2",

@@ -26,18 +26,22 @@ const Slider = () => {
     // Add more slides here if needed
   ];
 
-  const renderThumbs = (currentSlide:any, goToSlide:any) =>
-    slides.map((slide, index) => (
-      <button
-        key={index}
-        className={`h-4 w-4 mx-1 rounded-full focus:outline-none ${
-          currentSlide === index ? 'bg-black' : 'bg-gray-400'
+ 
+  const renderIndicator = (clickHandler:any, isSelected:any, index:any, label:any) => {
+    const customLabel = slides[index].heading; // Use slide heading as the custom label
+    return (
+      <li
+        className={`inline-block mr-3 ${
+          isSelected ? 'bg-black' : 'bg-gray-400'
         }`}
-        onClick={() => goToSlide(index)}
-      >
-        <span className="sr-only">{slide.heading}</span>
-      </button>
-    ));
+        style={{ width: '8px', height: '8px', borderRadius: '50%', cursor: 'pointer' }}
+        onClick={(e) => clickHandler(e, index)}
+        key={index}
+        title={customLabel}
+      />
+    );
+  };
+
 
   return (
     <Carousel
@@ -47,7 +51,7 @@ const Slider = () => {
       transitionTime={500}
       emulateTouch
       className="relative"
-      renderThumbs={renderThumbs}
+      renderIndicator={renderIndicator}
     >
       {slides.map((slide) => (
         <div key={slide.id} className={`h-full flex items-center justify-center ${slide.background}`}>
