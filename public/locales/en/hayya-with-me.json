@@ -1,0 +1,559 @@
+{
+  "request-hayya": "Request Hayya",
+  "wizard": {
+    "labels": {
+      "hayya-application": "Hayya Application",
+      "type-of-hayya-visit-desc": "Select the type of Hayya Visit you need for your journey:",
+      "type-a": "Type A",
+      "tourist": "Tourist*",
+      "tourist-card-description": "Are you planning to come to Qatar for visiting its beautiful spots? Request Hayya to enter the country",
+      "tourist-card-button": "Apply for Touristic Hayya",
+      "type-b": "Type B",
+      "conference-and-events": "Conferences & Events",
+      "conference-card-description": "Will you attend an event or conference hosted in Qatar? To participate you need to get an Hayya",
+      "conference-card-button": "Apply for Hayya Visit",
+      "type-c": "Type C",
+      "hayya-with-me": "Hayya with me",
+      "hayya-with-me-card-description": "Do you receive a voucher code by a family member or a friends? Redeem your code and request Hayya.",
+      "hayya-with-me-card-button": "Apply for Hayya with me"
+    },
+    "placeholder": {},
+    "hints": {},
+    "messages": {
+      "warn": {},
+      "info": {
+        "number-of-visa": "The number of visa options are subject to variations ",
+        "tourist-category-note": "* All these categories are included in the “Tourist” type: Tourist Entry (A1), GCC Resident Entry (A2), Entry with ETA (A3) (Holder of Schengen, USA, UK Visa/Residency), Entry for Companion of the GCC Citizen (A4)"
+      },
+      "errors": {},
+      "success": {}
+    }
+  },
+  "shared": {
+    "labels": {
+      "back": "Back",
+      "yes": "Yes",
+      "no": "No",
+      "save-draft": "Yes, save draft",
+      "save-and-exit": "Save and exit",
+      "submit": "Submit",
+      "submit-application": "Submit application",
+      "yes-save-draft": "Yes, save draft",
+      "cancel": "Cancel",
+      "exit": "Exit",
+      "next": "Next",
+      "leave-hayya-app-process": "Leave Hayya Application Process",
+      "validate-voucher": "Validate Voucher",
+      "back-account-info": "Back: Account Information",
+      "validate-your-id": "Validate your ID",
+      "back-personal-info": "Back: Personal Information",
+      "back-residency-info": "Back: Residency Information",
+      "next-review-your-app": "Next: Review Your Application",
+      "verify-hospitality": "Verify Hospitality",
+      "back-to-summary": "Back to summary",
+      "view-your-account": "View Your Account",
+      "blank-application": "Blank application",
+      "confirm": "Confirm"
+    },
+    "placeholder": {},
+    "hints": {},
+    "messages": {
+      "warn": {},
+      "info": {
+        "entry-for-gcc-resident-min-6-month": {
+          "title": "Entry for GCC residents with valid residence of minimum 6 months from date of arrival to Qatar",
+          "summary": "Before submitting, be aware that:",
+          "point-1": "Payment is required 100 QR",
+          "point-2": "Accommodation proof is required",
+          "point-3": "Health Insurance is required",
+          "point-4": ""
+        },
+        "entry-for-visitor-gcc-citizen": {
+          "title": "Entry for visitor who is accompanying a GCC citizen visiting the State of Qatar",
+          "summary": "Before submitting, be aware that:",
+          "point-1": "Payment is required 100 QR",
+          "point-2": "Accommodation proof is not required",
+          "point-3": "Health Insurance is required"
+        },
+        "entry-for-visitor-valid-schengen": {
+          "title": "Entry for visitor who already have a valid Schengen, US or UK, visa or residence",
+          "summary": "Before submitting, be aware that:",
+          "point-1": "You need a copy of valid UK, US, Schengen visa or residence",
+          "point-2": "Payment is required 100 QR",
+          "point-3": "Accommodation proof is required",
+          "point-4": "Health Insurance is required"
+        },
+        "invitation-international-guest": {
+          "title": "An invitation extended to international guest",
+          "summary": "Before submitting, be aware that:",
+          "point-1": "Accommodation proof is required",
+          "point-2": "Health Insurance is required",
+          "point-3": "",
+          "point-4": "",
+          "point-5": "",
+          "point-6": ""
+        }
+      },
+      "errors": {},
+      "success": {}
+    }
+  },
+  "modal": {
+    "leave-hayya-process": {
+      "title": "",
+      "description": "Are you sure you want to leave the Hayya application process?"
+    },
+    "submit-hayya-app": {
+      "title": "",
+      "description": "Are you sure you want to submit your Hayya application? You’ll be able to review its progress in your Hayya account."
+    },
+    "we-can-speed-up": {
+      "title": "",
+      "description": "We can speed up the process by pre-filling the Hayya application form with data from one of your previous requests.",
+      "select-previous-app": "Select previous application",
+      "select": "Select"
+    }
+  },
+  "application-info": {
+    "title": "APPLICATION INFORMATION",
+    "labels": {
+      "hayya-type": "Hayya type",
+      "voucher-code": "Voucher code"
+    },
+    "placeholder": {},
+    "hints": {
+      "voucher-code-hint": "Copy and paste the voucher code you received"
+    },
+    "messages": {
+      "warn": {},
+      "info": {},
+      "errors": {},
+      "success": {}
+    },
+    "tourist": {
+      "labels": {
+        "category": "Category",
+        "purpose-of-visit": "Purpose of visit",
+        "specify-purpose-of-visit": "Specify purpose of visit"
+      },
+      "placeholder": {
+        "select-the-category": "Select the category",
+        "select-the-purpose": "Select the purpose"
+      },
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {
+          "ready-to-start-note": {
+            "title": "You are ready to start!",
+            "description": "Before proceeding please keep this information at hand:",
+            "point-1": "Digital photograph of yourself",
+            "point-2": "Valid ID (passport or Qatar ID). For passport holder the validity should be at least 6 months.",
+            "point-3": "Details of your onward travel",
+            "point-4": "Hotel booking for the duration of your stay*",
+            "summary": "* in case someone is hosting you, please be sure they register it on the portal"
+          },
+          "your-voucher-code-is-valid": {
+            "title": "You Voucher code is valid!",
+            "description": "You can proceed applying for your Hayya, but before proceeding please keep this information at hand:",
+            "point-1": "Digital photograph of yourself",
+            "point-2": "Valid ID (passport or Qatar ID). For passport holder the validity should be at least 3 months.",
+            "point-3": "Details of your onward travel",
+            "point-4": "Hotel booking for the duration of your stay*",
+            "summary": "* in case someone is hosting you, please be sure they register it on the portal"
+          }
+        }
+      }
+    },
+    "event": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {
+          "voucher-code-not-valid": {
+            "title": "Ops! It seems this voucher code is no more valid",
+            "description": "Please be sure this code has not been used previously for an Hayya request. We suggest you get in touch with the person that shared with you the code or request support from our ",
+            "link": "Hayya support team"
+          }
+        },
+        "success": {
+          "voucher-code-valid": {
+            "title": "You Voucher code is valid!",
+            "description": "You can proceed applying for your Hayya, but before proceeding please keep this information at hand:",
+            "point-1": "Digital photograph of yourself",
+            "point-2": "Valid ID (passport or Qatar ID). For passport holder the validity should be at least 6 months."
+          }
+        }
+      }
+    },
+    "hayya-with-me": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {
+          "voucher-code-descr": "",
+          "voucher-code-descr-link": ""
+        },
+        "success": {
+          "voucher-code-title": "",
+          "voucher-code-descr": ""
+        }
+      }
+    }
+  },
+  "personal-info": {
+    "title": "Personal Information",
+    "shared": {},
+    "modal": {},
+    "tourist": {
+      "labels": {
+        "review-checkbox": "I have reviewed the",
+        "review-checkbox-link": "instructions to upload photo & passport",
+        "upload-personal-photo": "Upload personal photo",
+        "browse-for-pic": "Browse for picture",
+        "identification-document": "Identification document",
+        "upload-passport-front-page": "Upload passport front page",
+        "passport-type": "Passport type",
+        "id-number": "ID number",
+        "passport-number": "Passport number",
+        "date-of-birth": "Date of birth",
+        "expiry-date": "Expiry date",
+        "issuing-country": "Issuing country",
+        "nationality": "Nationality",
+        "male": "Male",
+        "female": "Female",
+        "first-name": "First name",
+        "last-name": "Last name",
+        "second-name": "Second name (optional)",
+        "third-name": "Third name (optional)",
+        "fourth-name": "Fourth name (optional)",
+        "first-name-ar": "First arabic name",
+        "last-name-ar": "Last arabic name",
+        "second-name-ar": "Second arabic name (optional)",
+        "third-name-ar": "Third arabic name (optional)",
+        "fourth-name-ar": "Fourth arabic name (optional)",
+        "contact-information": "contact information",
+        "phone-number": "Phone number",
+        "emergency-contact-name": "Emergency contact name",
+        "emergency-contact-phone": "Emergency contact phone number",
+        "i-am-qatar-resident": "I am a Qatar resident",
+        "i-am-intl-passport-holder": "I am an international passport holder",
+        "upload-qatar-id": "Upload Qatar ID"
+      },
+      "placeholder": {
+        "browse-for-passport-picture": "Browse for passport picture",
+        "choose-passport-type": "Choose type"
+      },
+      "hints": {
+        "browse-for-pic-hint": "Only image file (.jpg or .jpeg) are allowed. Max file size 1MB. Only the following special characters are allowed in the file name . - _"
+      },
+      "messages": {
+        "warn": {},
+        "info": {
+          "after-upload-id-note": "After uploading your ID, your data will be extracted automatically",
+          "auto-field-fill-warn": "Kindly re-check the auto-filled fields before proceeding, otherwise it might get rejected."
+        },
+        "errors": {
+          "not-eligible": {
+            "title": "Ops! It seems you  are not eligible to apply fo Hayya",
+            "description": "At the moment you can’t proceed with your Hayya application. For more information please get in touch with our Hayya support team."
+          },
+          "minimum-validity": {
+            "title": "Ops! It seems you can’t proceed with the application",
+            "description": "The minimum passport validity for applying for Hayya is 6 months. The passport expiration date seems to be sooner than this."
+          }
+        },
+        "success": {
+          "image-ok": {
+            "title": "",
+            "description": "The image is OK"
+          },
+          "id-validated": {
+            "title": "",
+            "description": "Your ID has been validated!"
+          }
+        }
+      }
+    },
+    "event": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {}
+      }
+    },
+    "hayya-with-me": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {}
+      }
+    }
+  },
+  "residence-info": {
+    "title": "Residence Information",
+    "shared": {},
+    "modal": {},
+    "tourist": {
+      "labels": {
+        "reviewed-instr-upload-gcc": "I have reviewed the ",
+        "reviewed-instr-upload-gcc-link": "instructions to upload GCC resident permit document",
+        "country-of-birth": "Country of birth",
+        "country-of-residency": "Country of residency",
+        "have-prev-citizenship": "Do you have a previous/other citizenship?",
+        "nationality": "Nationality",
+        "upload-gcc-permit-doc": "Upload GCC resident permit document",
+        "job-title": "Job title",
+        "upload-visa-card-copy": "Upload Visa/residency card copy",
+        "upload-gcc-resident-permit-doc": "Upload GCC resident permit document"
+      },
+      "placeholder": {
+        "select-country": "Select the country",
+        "nationality": "Choose Nationality",
+        "upload-gcc-doc": "Browse for permit picture"
+      },
+      "hints": {
+        "upload-gcc-doc-hint": "Only image file (.jpg or .jpeg) are allowed. Max file size 1MB. Only the following special characters are allowed in the file name . - _",
+        "job-title-hint": "",
+        "upload-visa-card-copy": "Only image file (.jpg or .jpeg) are allowed. Max file size 1MB. Only the following special characters are allowed in the file name . - _",
+        "upload-gcc-permit-doc": "Only image file (.jpg or .jpeg) are allowed. Max file size 1MB. Only the following special characters are allowed in the file name."
+      },
+      "messages": {
+        "warn": {},
+        "info": {
+          "job-title": {
+            "heading": "Job Title",
+            "point-1": "If the Job Title does not match the Job Title in your Residency Permit you will not be allowed to enter Qatar",
+            "point-2": "If you do not find your Job Title please use another Hayya category"
+          }
+        },
+        "errors": {},
+        "success": {}
+      }
+    },
+    "event": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {}
+      }
+    },
+    "hayya-with-me": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {}
+      }
+    }
+  },
+  "accommodation-info": {
+    "title": "Accommodation",
+    "shared": {},
+    "modal": {},
+    "tourist": {
+      "labels": {
+        "where-are-you-staying": "Where are you staying?",
+        "other-accommodation": "Other accommodation",
+        "hosted-by-family": "Hosted by family and friends",
+        "specify-accommodation-name": "Please specify the accommodation name "
+      },
+      "placeholder": {
+        "specify-accommodation-name": "Enter the name of you stay (example hotel name)"
+      },
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {
+          "no-body-hosting": {
+            "title": "Ops! It seems nobody is hosting you at the moment",
+            "description": "Please ask your host to register your stay on the Hayya portal. After that you can resume your application for the Hayya Entry Permit."
+          }
+        },
+        "success": {
+          "you-are-hosted": {
+            "title": "You are hosted!",
+            "description": "Great, we checked and found a match with a registered host. You can proceed with your Hayya application!"
+          }
+        }
+      }
+    },
+    "event": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {}
+      }
+    },
+    "hayya-with-me": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {}
+      }
+    }
+  },
+  "application-summary": {
+    "title": "Application Summary",
+    "shared": {},
+    "modal": {},
+    "tourist": {
+      "labels": {
+        "application-info": "Application information",
+        "edit-app-info": "Edit Application Info",
+        "hayya-type": "Hayya type",
+        "category": "Category",
+        "purpose-of-visit": "Purpose of visit",
+        "specify-purpose-of-visit": "Specify purpose of visit",
+        "document-info": "2. Document information",
+        "residence-info": "3. Residence information",
+        "accommodation": "4. Accommodation",
+        "i-have-read-terms": {
+          "description": "I’ve read and agree to Hayya",
+          "link-terms-of-use": "Terms of Use",
+          "and": "and",
+          "privacy-policy": "Privacy Policy"
+        },
+        "prev-other-citizen": "PREVIOUS/OTHER CITIZENSHIP",
+        "gcc-resident-permit-doc": "GCC resident permit document",
+        "personal-photo": "PERSONAL PHOTO",
+        "passport-front-page": "PASSPORT FRONT PAGE",
+        "passport-number": "PASSPORT NUMBER",
+        "passport-type": "PASSPORT TYPE",
+        "edit-document-information": "Edit Document information",
+        "edit-residence-information": "Edit Residence information",
+        "edit-accommodation": "Edit Accommodation"
+      },
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {
+          "general-permit": {
+            "title": "",
+            "description": {
+              "summary": "",
+              "point-1": "",
+              "point-2": "",
+              "point-3": ""
+            }
+          },
+          "general-entry-permit": {
+            "title": "General Entry Permit of Qatar for visit and tourism",
+            "description": {
+              "summary": "Before submitting, be aware that:",
+              "point-1": "Payment is required 100 QR",
+              "point-2": "Accommodation proof is required Health Insurance required",
+              "point-3": "Health insurance required"
+            }
+          }
+        },
+        "errors": {},
+        "success": {}
+      }
+    },
+    "event": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {}
+      }
+    },
+    "hayya-with-me": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {}
+      }
+    }
+  },
+  "success-page": {
+    "labels": {
+      "you-are-done": "You’re Done!",
+      "you-are-done-summary": "Your Hayya application has been submitted successfully.",
+      "reference-no": "Reference No.",
+      "go-to-hayya-guide": "Go to your Hayya account, to monitor approval status of your application, manage your information and add companions to trip.",
+      "view-account": "View Your Account"
+    },
+    "placeholder": {},
+    "hints": {},
+    "messages": {
+      "warn": {},
+      "info": {},
+      "errors": {},
+      "success": {}
+    }
+  },
+  "category": {
+    "labels": {
+      "tourist-entry-a1": "Tourist Entry (A1)",
+      "gcc-resident-entry-a2": "GCC Resident Entry (A2)",
+      "entry-with-eta-a3": "Entry with ETA (A3)(Holder of Schengen, USA, UK Visa/Residency)",
+      "entry-for-companion-a4": "Entry for Companion of the GCC Citizen (A4)",
+      "conference-and-events-b": "Conferences and Events Entry (B)",
+      "hayya-with-me-c": "Hayya with Me (C)"
+    }
+  },
+  "dropdown": {
+    "purpose-of-visit": {
+      "placeholder": "Select the purpouse",
+      "business-meeting": "Business meeting",
+      "convention-participation": "Convention participation",
+      "event-participation": "Event participation",
+      "friend-visit": "Friend visit",
+      "heritage-tourism": "Heritage tourism",
+      "leisure": "Leisure",
+      "shopping": "Shopping",
+      "sports-event": "Sports event",
+      "wedding-party": "Wedding party",
+      "other": "Other"
+    },
+    "category": {
+      "placeholder": "Select the category",
+      "tourist-entry-a1": "Tourist Entry (A1)",
+      "gcc-resident-entry-a2": "GCC Resident Entry (A2)",
+      "entry-with-eta-a3": "Entry with ETA (A3) (Holder of Schengen, USA, UK Visa/Residency)",
+      "entry-for-gcc-a4": "Entry for Companion of the GCC Citizen (A4)"
+    }
+  }
+}

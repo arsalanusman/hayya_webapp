@@ -1,0 +1,16 @@
+{
+  "labels": {
+    "ops": "عفواً!",
+    "we-are-sorry": "نحن آسفون للغاية، ولكن حدثت مشكلة أثناء تقديم طلب هَيـّا الخاص بك.",
+    "contact-support": "تواصل مع فريق الدعم الفني",
+    "try-a-new-submission": "جرب تقديم طلب جديد"
+  },
+  "placeholder": {},
+  "hints": {},
+  "messages": {
+    "warn": {},
+    "info": {},
+    "errors": {},
+    "success": {}
+  }
+}

@@ -1,0 +1,12 @@
+/* components/slider.css */
+.carousel .control-dots {
+    bottom: 20px;
+  }
+  
+  .carousel .control-dots .dot {
+    background: #999;
+  }
+  
+  .carousel .control-dots .dot.selected {
+    background: #333;
+  }

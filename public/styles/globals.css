@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Georama:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+ 
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+ 
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+ 
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+ 
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+ 
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+ 
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+ 
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+ 
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+ 
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+ 
+    --ring: 215 20.2% 65.1%;
+ 
+    --radius: 0.5rem;
+  }
+ 
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+ 
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+ 
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+ 
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+ 
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+ 
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+ 
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+ 
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+ 
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+ 
+    --ring: 217.2 32.6% 17.5%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Georama', sans-serif;
+  }
+}
+.ring-offset-background {
+  --tw-ring-offset-color: none !important;
+}
+.before-login-with:before {
+  content: "";
+  border-top: 1px solid #ccc;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 12px;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.before-login-with p {
+  background: #fff;
+  position: relative;
+  z-index: 99999;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0px 10px;
+}
+.boder-heading-style:after {
+  content: "";
+  border-bottom: 1px solid #d5cc65;
+  position: absolute;
+  left: 0;
+  width: 30px;
+  bottom: -2px;
+}
+.backbutton:hover p {
+  color: #d5cc65;
+}
+.backbutton:hover span {
+  background: #d5cc65;
+  transform: scale(0.8);
+}
+.backbutton p {
+  transition: all 1.1s ease;
+}
+.backbutton span {
+  transition: all 1.9s ease;
+}
+p.text-white.complete{
+  --tw-text-opacity: 1;
+  color: #52d152;
+}
+.bg-white.complete {
+  --tw-text-opacity: 1;
+  background-color: #52d152;
+  border-color: #52d152;
+}
+input.PhoneInputInput {
+  outline: none;
+}
+.text-yellow{
+  color:#d5cc65
+}
+.w30{
+  width: 30rem !important; 
+}

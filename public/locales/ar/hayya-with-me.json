@@ -1,0 +1,561 @@
+{
+  "request-hayya": "طلب هَيـّا",
+  "wizard": {
+    "labels": {
+      "hayya-application": "طلب هَيّا",
+      "type-of-hayya-visit-desc": "حدد نوع زيارة هَيّـا التي تحتاجها لرحلتك:",
+      "type-a": "Type A",
+      "tourist": "سمة الدخول السياحية*",
+      "tourist-card-description": "هل تتلقى رمز قسيمة من قبل أحد أفراد الأسرة أو الأصدقاء؟ استرد رمزك واطلب بطاقة هَيّا معي.",
+      "tourist-card-button": "قدم لفيزا هَيّـا السياحية",
+      "type-b": "Type B",
+      "conference-and-events": "سمة دخول للفعاليات والمؤتمرات (B)",
+      "conference-card-description": "هل ستحضر حدثًا أو مؤتمرًا تستضيفه قطر؟ للمشاركة يجب أن تحصل على بطاقة هَيّا",
+      "conference-card-button": "قدم لتصريح الدخول",
+      "type-c": "Type C",
+      "hayya-with-me": "هَيّـا معي",
+      "hayya-with-me-card-description": "هل تتلقى رمز قسيمة من قبل أحد أفراد الأسرة أو الأصدقاء؟ استرد رمزك واطلب بطاقة هَيّا معي.",
+      "hayya-with-me-card-button": "قدم لهَيّـا معي"
+    },
+    "placeholder": {},
+    "hints": {},
+    "messages": {
+      "warn": {},
+      "info": {
+        "number-of-visa": "قد يخضع عدد خيارات التأشيرة للتغيير",
+        "tourist-category-note": "*سمة الدخول السياحية(A1)، سمة الدخول لمقيمي دول مجلس التعاون الخليجي (A2)، سمة مع إخطار سفر إلكتروني (A3)، سمة الدخول لمرافقي مواطني دول مجلس التعاون الخليجي (A4)، جميعها مضمنة في الفئة الاولى."
+      },
+      "errors": {},
+      "success": {}
+    }
+  },
+  "shared": {
+    "labels": {
+      "back": "خلف",
+      "yes": "نعم",
+      "no": "لا",
+      "save-draft": "نعم، حفظ مسودة",
+      "save-and-exit": "الحفظ والمغادرة",
+      "submit": "تقديم الطلب",
+      "submit-application": "تقديم الطلب",
+      "yes-save-draft": "نعم، حفظ مسودة",
+      "cancel": "إلغاء",
+      "exit": "خروج",
+      "next": "التالي",
+      "leave-hayya-app-process": "خروج",
+      "validate-voucher": "التحقق من رمز القسيمة",
+      "back-account-info": "رجوع: معلومات التطبيق",
+      "validate-your-id": "تحقق من هويتك",
+      "back-personal-info": "رجوع: المعلومات الشخصية",
+      "back-residency-info": "رجوع: معلومات الإقامة",
+      "next-review-your-app": "التالي: مراجعة طلبك",
+      "verify-hospitality": "تحقق من الإستضافة",
+      "back-to-summary": "العودة لمراجعة الطلب",
+      "view-your-account": "الذهاب الى بطاقة هَيـّا الخاصة بك",
+      "blank-application": "تطبيق فارغ",
+      "confirm": "تأكيد"
+    },
+    "placeholder": {},
+    "hints": {},
+    "messages": {
+      "warn": {},
+      "info": {
+        "entry-for-gcc-resident-min-6-month": {
+          "title": "سمة دخول المقيمين في دول مجلس التعاون الخليجي بغرض السياحة",
+          "summary": "قبل التقديم ، كن على علم بما يلي:",
+          "point-1": "- اقامة سارية 3 أشهر على الاقل من تاريخ الدخول",
+          "point-2": "- دفع الرسوم.",
+          "point-3": "-  إثبات السكن*",
+          "point-4": "-  سمة دخول واحدة بصلاحية 90 يوم من تاريخ الإصدار"
+        },
+        "entry-for-visitor-gcc-citizen": {
+          "title": "سمة دخول الزوار المرافقين لمواطني دول مجلس التعاون الخليجي أثناء زيارتهم لدولة قطر",
+          "summary": "قبل التقديم ، كن على علم بما يلي:",
+          "point-1": "دفع الرسوم المقررة",
+          "point-2": "لن يسمح للمرافقين بدخول دولة قطر إلا بصحبة المستقدم الخليجي.",
+          "point-3": "سمة دخول واحدة بصلاحية 90 يوم من تاريخ الإصدار"
+        },
+        "entry-for-visitor-valid-schengen": {
+          "title": "سمة دخول الزوار الذين يملكون إقامات أو تأشيرات سارية المفعول لمنطقة شنغن أو الولايات المتحدة الأمريكية أو المملكة المتحدة أو كندا، أو أستراليا، أو نيوزيلندا",
+          "summary": "قبل التقديم ، كن على علم بما يلي:",
+          "point-1": "تقديم نسخة من التأشيرة او الاقامة سارية المفعول ",
+          "point-2": "دفع الرسوم المقررة",
+          "point-3": "سمة دخول واحدة بصلاحية 30 يوم من تاريخ الإصدار ",
+          "point-4": ""
+        },
+        "invitation-international-guest": {
+          "title": "دعوة يوجهها مشجع دولي يحمل بطاقة هَيّا 2022 التي تمت الموافقة عليها، إلى 3 ضيوف دوليين لزيارة قطر",
+          "summary": "قبل التقديم ، كن على علم بما يلي:",
+          "point-1": "يتطلب الحصول على رمز دعوة هَيّا معي ",
+          "point-2": "لا يلزم دفع أي مبالغ مالية ",
+          "point-3": "يلزم تقديم إثبات لمكان الإقامة ",
+          "point-4": "يلزم وجود تأمين صحي",
+          "point-5": "إذن الدخول متعدد السفرات",
+          "point-6": "يجب مغادرة قطر بحلول 24 يناير 2024"
+        }
+      },
+      "errors": {},
+      "success": {}
+    }
+  },
+  "modal": {
+    "leave-hayya-process": {
+      "title": "",
+      "description": "هل أنت متأكد أنك تريد ترك عملية التقديم لبطاقة هَيـّآ؟"
+    },
+    "submit-hayya-app": {
+      "title": "",
+      "description": "هل أنت متأكد أنك تريد تقديم طلب هَيـّا الخاص بك؟ ستتمكن من مراجعة التقدم المحرز في حسابك في هَيـّا."
+    },
+    "we-can-speed-up": {
+      "title": "",
+      "description": "* في حالة استضافتك من قبل شخص ما ، يرجى التأكد من تسجيله على بوابة هَيـّا",
+      "select-previous-app": "اختيار طلب سابق",
+      "select": "اختر"
+    }
+  },
+  "application-info": {
+    "title": "معلومات الطلب",
+    "labels": {
+      "hayya-type": "نوع هَيـّا",
+      "voucher-code": "رمز القسيمة"
+    },
+    "placeholder": {},
+    "hints": {
+      "voucher-code-hint": "انسخ والصق رمز القسيمة الذي تلقيته"
+    },
+    "messages": {
+      "warn": {},
+      "info": {},
+      "errors": {},
+      "success": {}
+    },
+    "tourist": {
+      "labels": {
+        "category": "اختر فئة زيارة هَيّا",
+        "purpose-of-visit": "اختر غرض الزيارة",
+        "specify-purpose-of-visit": "حدد الغرض من الزيارة"
+      },
+      "placeholder": {
+        "select-the-category": "يرجى اختيار فئة زيارة هَيّا",
+        "select-the-purpose": "يرجى اختيار غرض الزيارة"
+      },
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {
+          "ready-to-start-note": {
+            "title": "أنت جاهز للبدء!",
+            "description": "قبل المتابعة ، يرجى الاحتفاظ بهذه المعلومات في متناول اليد:",
+            "point-1": "صورة رقمية لك",
+            "point-2": "بطاقة هوية سارية (جواز سفر أو بطاقة هوية قطرية). بالنسبة لحامل جواز السفر ، يجب أن تكون الصلاحية 6 أشهر على الأقل",
+            "point-3": "تفاصيل سفرك",
+            "point-4": "حجز الفندق طوال مدة إقامتك*",
+            "summary": "* في حالة استضافتك من قبل شخص ما، يرجى التأكد من تسجيله على بوابة هَيـا"
+          },
+          "your-voucher-code-is-valid": {
+            "title": "رمز قسيمتك صالح!",
+            "description": "يمكنك متابعة التقدم للحصول على هَيـّا الخاص بك ، ولكن قبل المتابعة، يرجى الاحتفاظ بهذه المعلومات في متناول اليد:",
+            "point-1": "صورة رقمية لك",
+            "point-2": "بطاقة هوية سارية (جواز سفر أو بطاقة هوية قطرية). بالنسبة لحاملي جوازات السفر، يجب أن تكون الصلاحية 3 أشهر على الأقل.",
+            "point-3": "تفاصيل سفرك.",
+            "point-4": "حجز الفندق طوال مدة إقامتك*",
+            "summary": "* في حالة استضافتك من قبل شخص ما، يرجى التأكد من تسجيله على بوابة هَيـا"
+          }
+        }
+      }
+    },
+    "event": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {
+          "voucher-code-not-valid": {
+            "title": "عفوًا! يبدو أن رمز القسيمة هذا لم يعد صالحًا",
+            "description": "يرجى التأكد من عدم استخدام هذا الرمز مسبقًا في طلب هَيـّا. نقترح عليك الاتصال بالشخص الذي شارك معك الرمز ",
+            "link": "أو طلب الدعم من فريق دعم هَيـّا"
+          }
+        },
+        "success": {
+          "voucher-code-valid": {
+            "title": "رمز قسيمتك صالح!",
+            "description": "يمكنك متابعة التقدم للحصول على هَيـّا الخاص بك ، ولكن قبل المتابعة، يرجى الاحتفاظ بهذه المعلومات في متناول اليد:",
+            "point-1": "صورة رقمية لك",
+            "point-2": "بطاقة هوية سارية (جواز سفر أو بطاقة هوية قطرية). بالنسبة لحاملي جواز السفر، يجب أن تكون الصلاحية 6 أشهر على الأقل."
+          }
+        }
+      }
+    },
+    "hayya-with-me": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {
+          "voucher-code-descr": "",
+          "voucher-code-descr-link": ""
+        },
+        "success": {
+          "voucher-code-title": "",
+          "voucher-code-descr": ""
+        }
+      }
+    }
+  },
+  "personal-info": {
+    "title": "المعلومات الشخصية",
+    "shared": {},
+    "modal": {},
+    "tourist": {
+      "labels": {
+        "review-checkbox": "لقد راجعت تعليمات تحميل الصورة وجواز السفر",
+        "review-checkbox-link": "",
+        "upload-personal-photo": "تحميل صورة شخصية",
+        "browse-for-pic": "تصفح الصورة",
+        "identification-document": "وثيقة إثبات الهوية",
+        "upload-passport-front-page": "تحميل الصفحة الأولى لجواز السفر",
+        "passport-type": "نوع جواز السفر",
+        "id-number": "رقم الهوية",
+        "passport-number": "رقم جواز السفر",
+        "date-of-birth": "تاريخ الميلاد",
+        "expiry-date": "تاريخ الانتهاء",
+        "issuing-country": " بلد الاصدار",
+        "nationality": "الجنسية",
+        "male": "ذكر",
+        "female": "انثى",
+        "first-name": "الاسم الاول",
+        "last-name": "اسم العائلة",
+        "second-name": "الاسم الثاني (اختياري)",
+        "third-name": "الاسم الثالث (اختياري)",
+        "fourth-name": "الاسم الرابع (اختياري)",
+        "first-name-ar": "الاسم الاول (عربي)",
+        "last-name-ar": "اسم العائلة (عربي)",
+        "second-name-ar": "الاسم الثاني (عربي - اختياري)",
+        "third-name-ar": "الاسم الثالث (عربي - اختياري)",
+        "fourth-name-ar": "الاسم الرابع (عربي - اختياري)",
+        "contact-information": "المعلومات الشخصية",
+        "phone-number": "رقم الهاتف",
+        "emergency-contact-name": "اسم للتواصل في حالات الطوارئ",
+        "emergency-contact-phone": "معلومات التواصل لحالات الطوارئ",
+        "i-am-qatar-resident": "أنا مقيم في قطر",
+        "i-am-intl-passport-holder": "أنا حامل جواز سفر دولي",
+        "upload-qatar-id": "تحميل الهوية القطرية"
+      },
+      "placeholder": {
+        "browse-for-passport-picture": "الرجاء تحديد نوع جواز السفر",
+        "choose-passport-type": "الرجاء تحديد نوع جواز السفر"
+      },
+      "hints": {
+        "browse-for-pic-hint": "يُسمح فقط بملف الصور (.jpg أو .jpeg). الحد الأقصى لحجم الملف 1 ميجا بايت. يُسمح فقط باستخدام الأحرف الخاصة التالية في اسم الملف. (. - _)"
+      },
+      "messages": {
+        "warn": {},
+
+        "info": {
+          "after-upload-id-note": "بعد تحميل وثيقة اثبات هويتك، سيتم استخراج بياناتك تلقائيًا.",
+          "auto-field-fill-warn": "يرجى إعادة التحقق من الحقول التي تم ملؤها تلقائيًا، وإلا فقد يتم رفض الطلب في حال عدم المطابقة."
+        },
+        "errors": {
+          "not-eligible": {
+            "title": "عفوًا! يبدو أنك غير مؤهل للتقدم بطلب للحصول على بطاقة هَيـّا",
+            "description": "في الوقت الحالي لا يمكنك متابعة تطبيق هَيّـا الخاص بك. لمزيد من المعلومات، يرجى التواصل مع فريق دعم هَيـّا."
+          },
+          "minimum-validity": {
+            "title": "عفوًا! لا يمكنك المتابعة في الطلب",
+            "description": "الحد الأدنى لصلاحية جواز السفر للتقديم على هَيـّا هو 6 أشهر. يبدو أن تاريخ انتهاء صلاحية جواز السفر أقرب من ذلك."
+          }
+        },
+        "success": {
+          "image-ok": {
+            "title": "",
+            "description": "هذه الصورة مناسبة"
+          },
+          "id-validated": {
+            "title": "",
+            "description": "تم التحقق من صحة هويتك."
+          }
+        }
+      }
+    },
+    "event": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {}
+      }
+    },
+    "hayya-with-me": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {}
+      }
+    }
+  },
+  "residence-info": {
+    "title": "معلومات الاقامة",
+    "shared": {},
+    "modal": {},
+    "tourist": {
+      "labels": {
+        "reviewed-instr-upload-gcc": "لقد قمت بمراجعة",
+        "reviewed-instr-upload-gcc-link": "تعليمات رفع وثيقة إقامة مقيم مجلس التعاون الخليجي",
+        "country-of-birth": "بلد الميلاد",
+        "country-of-residency": "بلد الاقامة",
+        "have-prev-citizenship": "هل لديك جنسية سابقة / أخرى؟",
+        "nationality": "الجنسية",
+        "upload-gcc-permit-doc": "تحميل وثيقة تصريح الإقامة بدول مجلس التعاون الخليجي",
+        "job-title": "المسمى الوظيفي ",
+        "upload-visa-card-copy": "تحميل فيزا/ كرت الإقامة",
+        "upload-gcc-resident-permit-doc": ""
+      },
+      "placeholder": {
+        "select-country": "اختر البلد",
+        "nationality": "اختر الجنسية",
+        "upload-gcc-doc": "تصفح  اقامة دول مجلس التعاون"
+      },
+      "hints": {
+        "upload-gcc-doc-hint": "يُسمح فقط بملف الصور (.jpg أو .jpeg). الحد الأقصى لحجم الملف 1 ميجا بايت. يُسمح فقط باستخدام الأحرف الخاصة التالية في اسم الملف. (. - _)",
+        "job-title-hint": "",
+        "upload-visa-card-copy": "يُسمح فقط بملف الصور (.jpg أو .jpeg). الحد الأقصى لحجم الملف 1 ميجا بايت. يُسمح فقط باستخدام الأحرف الخاصة التالية في اسم الملف. (. - _)",
+        "upload-gcc-permit-doc": "يُسمح فقط بملفات الصور (.jpg أو .jpeg). الحجم الأقصى للملف 1 ميجابايت. يُسمح فقط باستخدام الأحرف الخاصة التالية في اسم الملف."
+      },
+      "messages": {
+        "warn": {},
+        "info": {
+          "job-title": {
+            "heading": "المسمى الوظيفي",
+            "point-1": "إذا كان المسمى الوظيفي لا يتطابق مع المسمى الوظيفي في وثيقة الإقامة الخاص بك، فلن يُسمح لك بدخول قطر",
+            "point-2": " إذا لم تجد المسمى الوظيفي الخاص بك في الخيارات، فيرجى استخدام فئة هَيـّا أخرى"
+          }
+        },
+        "errors": {},
+        "success": {}
+      }
+    },
+    "event": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {}
+      }
+    },
+    "hayya-with-me": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {}
+      }
+    }
+  },
+  "accommodation-info": {
+    "title": "معلومات السكن",
+    "shared": {},
+    "modal": {},
+    "tourist": {
+      "labels": {
+        "where-are-you-staying": "اين تقيم؟",
+        "other-accommodation": "استضافة أخرى",
+        "hosted-by-family": "استضافة العائلة والأصدقاء",
+        "specify-accommodation-name": "يرجى تحديد اسم مكان الإقامة"
+      },
+      "placeholder": {
+        "specify-accommodation-name": "أدخل اسم المكان (مثال: اسم فندق)"
+      },
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {
+          "no-body-hosting": {
+            "title": "عفوًا! يبدو أنه لا يوجد أحد يستضيفك في الوقت الحالي",
+            "description": "يرجى مطالبة مضيفك بتسجيل إقامتك على بوابة هَيـّا. بعد ذلك يمكنك استئناف طلبك للحصول على فيزا هَيـّا."
+          }
+        },
+        "success": {
+          "you-are-hosted": {
+            "title": "أنت مستضاف!",
+            "description": "رائع، لقد تحققنا ووجدنا تطابقًا مع مضيف مسجل. يمكنك متابعة الطلب الخاص بك!"
+          }
+        }
+      }
+    },
+    "event": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {}
+      }
+    },
+    "hayya-with-me": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {}
+      }
+    }
+  },
+  "application-summary": {
+    "title": "مراجعة وتقديم الطلب",
+    "shared": {},
+    "modal": {},
+    "tourist": {
+      "labels": {
+        "application-info": "معلومات الطلب",
+        "edit-app-info": "عدل معلومات الطلب",
+        "hayya-type": " فئة زيارة هَيّا",
+        "category": "الفئة",
+        "purpose-of-visit": "اختر غرض الزيارة",
+        "specify-purpose-of-visit": "حدد الغرض من الزيارة",
+        "document-info": "2. المعلومات الشخصية",
+        "residence-info": "3. معلومات الإقامة",
+        "accommodation": "4.معلومات السكن",
+        "i-have-read-terms": {
+          "description": "لقد قرأت وأوافق على ",
+          "link-terms-of-use": "شروط الاستخدام",
+          "and": "و",
+          "privacy-policy": "سياسة الخصوصية"
+        },
+        "prev-other-citizen": "جنسية سابقة/اخرى",
+        "gcc-resident-permit-doc": "وثيقة تصريح الإقامة بدول مجلس التعاون الخليحي",
+        "personal-photo": "الصورة الشخصية",
+        "passport-front-page": "الصفحة الأولى لجواز السفر",
+        "passport-number": "رقم جواز السفر",
+        "passport-type": "نوع جواز السفر",
+        "edit-document-information": "تعديل المعلومات الشخصي",
+        "edit-residence-information": "تعديل معلومات الإقامة",
+        "edit-accommodation": "تعديل معلومات السكن"
+      },
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {
+          "general-permit": {
+            "title": "",
+            "description": {
+              "summary": "",
+              "point-1": "",
+              "point-2": "",
+              "point-3": ""
+            }
+          },
+          "general-entry-permit": {
+            "title": "تصريح دخول عام لدولة قطر للزيارة و السياحة:",
+            "description": {
+              "summary": "قبل التقديم، يُرجى مراعاة النقاط التالية:",
+              "point-1": "الدفع مطلوب بقيمة 100 ريال قطري",
+              "point-2": "يُتطلب إثبات الإقامة وتوفير تأمين صحي",
+              "point-3": "يُتطلب التأمين الصحي"
+            }
+          }
+        },
+        "errors": {},
+        "success": {}
+      }
+    },
+    "event": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {}
+      }
+    },
+    "hayya-with-me": {
+      "labels": {},
+      "placeholder": {},
+      "hints": {},
+      "messages": {
+        "warn": {},
+        "info": {},
+        "errors": {},
+        "success": {}
+      }
+    }
+  },
+  "success-page": {
+    "labels": {
+      "you-are-done": "لقد انتهيت!",
+      "you-are-done-summary": "تم تقديم طلب هَيـّا الخاص بك بنجاح.",
+      "reference-no": ".الرقم المرجعي",
+      "go-to-hayya-guide": " انتقل إلى حساب هَيـّا الخاص بك ، لمراقبة حالة الموافقة على طلبك، وإدارة معلوماتك وإضافة مرافقين إلى الرحلة.",
+      "view-account": "الذهاب الى بطاقة هَيـّا الخاصة بك"
+    },
+    "placeholder": {},
+    "hints": {},
+    "messages": {
+      "warn": {},
+      "info": {},
+      "errors": {},
+      "success": {}
+    }
+  },
+  "category": {
+    "labels": {
+      "tourist-entry-a1": "سمة الدخول السياحية (A1)",
+      "gcc-resident-entry-a2": "سمة الدخول لمقيمي دول مجلس التعاون الخليجي (A2)",
+      "entry-with-eta-a3": "سمة مع إخطار سفر إلكتروني (A3)",
+      "entry-for-companion-a4": "سمة الدخول لمرافقي مواطني دول مجلس التعاون الخليجي (A4)",
+      "conference-and-events-b": "تصريح دخول للفعاليات والمؤتمرات (B)",
+      "hayya-with-me-c": "هَيّا معي (C)"
+    }
+  },
+  "dropdown": {
+    "purpose-of-visit": {
+      "placeholder": "اختر الغرض",
+      "business-meeting": "اجتماع عمل",
+      "convention-participation": "المشاركة في معرض",
+      "event-participation": "المشاركة في فعالية",
+      "friend-visit": "زيارة صديق",
+      "heritage-tourism": "زيارة المعالم الأثرية",
+      "leisure": "الترفيه",
+      "shopping": "التسوق",
+      "sports-event": "حدث رياضي",
+      "wedding-party": "حفل زفاف",
+      "other": "سبب آخر، يرجى ذكر السبب في الحقل الثاني"
+    },
+    "category": {
+      "placeholder": "اختر الفئة",
+      "tourist-entry-a1": "سمة الدخول السياحية(A1) ",
+      "gcc-resident-entry-a2": "سمة الدخول لمقيمي دول مجلس التعاون الخليجي (A2) ",
+      "entry-with-eta-a3": "سمة مع إخطار سفر إلكتروني (A3) ",
+      "entry-for-gcc-a4": "سمة الدخول لمرافقي مواطني دول مجلس التعاون الخليجي (A4) "
+    }
+    
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "labels": {
+    "request-hayya": "Request Hayya",
+    "my-hayya": "My Hayya",
+    "share-hayya-with-me": "Share Hayya with me codes",
+    "manage-dependants": "Manage dependants",
+    "view-my-applications": "View all my applications",
+    "apply-for-new-hayya": "Apply for new Hayya",
+    "summary": "Summary",
+    "application-history": "Application History",
+    "accommodation": "Accommodation",
+    "entry-ref-number": "ENTRY REFERENCE NUMBER",
+    "status": "STATUS",
+    "expiry-date": "EXPIRY DATE",
+    "hayya-number": "Hayya NUMBER",
+    "type": "type",
+    "purpose": "purpose",
+    "accepted": "Accepted",
+    "pending": "Pending",
+    "submission": "Submission",
+    "submission-summary": "Your application has been accepted",
+    "accommodation-summary-link": "Upload",
+    "accommodation-summary": " the proof of your accommodation",
+    "payments": "Payments ",
+    "payment-summary": "Proceed with the payment on the website",
+    "payment-summary-link": "website",
+    "hayya-digital-card": "Hayya Digital Card",
+    "update-application": "Update application",
+    "download-hayya": "Download Hayya",
+    "note": "Note: ",
+    "hayya-platform-node-description": "The Hayya platform may amend your application data so that it matches the information contained on your official identify document per the ",
+    "hayya-platform-node-description-link": "Hayya platform identity document information format."
+  },
+  "placeholder": {},
+  "hints": {},
+  "messages": {
+    "warn": {},
+    "info": {},
+    "errors": {},
+    "success": {}
+  }
+}

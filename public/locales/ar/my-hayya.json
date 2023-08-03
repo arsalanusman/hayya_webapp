@@ -1,0 +1,42 @@
+{
+  "labels": {
+    "request-hayya": "طلب هَيـّا",
+    "my-hayya": "بطاقتي",
+    "share-hayya-with-me": "مشاركة رموز قسيمة هَيـّا معي.",
+    "manage-dependants": "إدارة المعالون",
+    "view-my-applications": "التقديم لطلب هَيـّا جديدة",
+    "apply-for-new-hayya": "مراجعة جميع الطلبات",
+    "summary": "مخلص الطلب",
+    "application-history": "تاريخ الطلب",
+    "accommodation": "مكان الإقامة",
+    "entry-ref-number": "الرقم المرجعي لتصريح الدخول ",
+    "status": "الحالة",
+    "expiry-date": "تاريخ إنتهاء الصلاحية",
+    "hayya-number": "رقم هَيّا",
+    "type": "فئة زيارة هَيّا",
+    "purpose": "الغرض",
+    "accepted": "مقبول",
+    "pending": "قيد الانتظار",
+    "submission": "تم تقديم الطلب",
+    "submission-summary": "تم قبول طلبك",
+    "accommodation-summary-link": "تحميل",
+    "accommodation-summary": " إثبات حجز الإقامة المؤكد",
+    "payments": "الدفع",
+    "payment-summary": "تابع الدفع على الموقع",
+    "payment-summary-link": "website",
+    "hayya-digital-card": "بطاقة هَيـّا الرقمية",
+    "update-application": "تحديث الطلب",
+    "download-hayya": "تحميل بطاقتي",
+    "note": ":ملاحظة",
+    "hayya-platform-node-description": ": قد يتم تعديل بيانات طلبك على منصة هَيّا بحيث تتطابق مع المعلومات الواردة في وثيقة هويتك الرسمية وتتناسب مع ",
+    "hayya-platform-node-description-link": " تنسيق وثيقة الهوية على منصة هَيّا"
+        },
+  "placeholder": {},
+  "hints": {},
+  "messages": {
+    "warn": {},
+    "info": {},
+    "errors": {},
+    "success": {}
+  }
+}

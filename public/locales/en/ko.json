@@ -1,0 +1,16 @@
+{
+  "labels": {
+    "ops": "OPS!",
+    "we-are-sorry": "We are very sorry, but there was an issue while submitting your Hayya application.",
+    "contact-support": "Contact support",
+    "try-a-new-submission": "Try a new submission"
+  },
+  "placeholder": {},
+  "hints": {},
+  "messages": {
+    "warn": {},
+    "info": {},
+    "errors": {},
+    "success": {}
+  }
+}
