@@ -7,8 +7,14 @@ import { useTranslation } from "react-i18next";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { HayyaWithMe } from "../../helper/enums/hayya-with-me";
 import { useEffect, useState } from "react";
+import Banner from "@/components/expo/banner";
 import Slider from "@/components/slider";
-import CarouselSlider from "@/components/carousel-slider";
+import CarouselSlider from "@/components/expo/services";
+import Journey from "@/components/expo/Journey";
+import Apply from "@/components/expo/apply";
+import Events from "@/components/expo/events";
+import Mobileapp from "@/components/expo/mobileapp";
+import   Head  from "next/head";
 
 
 type Props = {};
@@ -27,16 +33,23 @@ const HomePage =  () => {
         }
     ,[])
 
-    return (<>
+    return (<div className=" bg-[#F1F1F1]">
+       <Head>
+        <title>Qatar Expo 2023</title>
+          <link href="/styles/expo.css" rel="stylesheet" />
+          <link href="/styles/slick.css" rel="stylesheet" />
+        </Head>
         {isLoading &&
             <>
-         {/* <div className="container-fluid pb-10 px-4 sm:px-20 bg-gradient-to-t from-[#0C4532] to-[#327886] to-100%  mx-auto  h-full w-full ">
-            
-         </div> */}
-        <Slider />
+        <Banner/>
+       
         <CarouselSlider />
+        <Journey/>
+        <Apply/>
+        <Events/>
+        <Mobileapp/>
         </>
-    }</>)
+    }</div>)
 }
 
 
