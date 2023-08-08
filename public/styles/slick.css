@@ -82,9 +82,9 @@
     height: 100%;
     min-height: 1px;
 }
-[dir='rtl'] .slick-slide
+[dir='rtl'] .banner-main
 {
-    float: right;
+    direction: rtl;
 }
 .slick-slide img
 {
