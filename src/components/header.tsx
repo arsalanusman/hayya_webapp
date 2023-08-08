@@ -16,10 +16,11 @@ import { useTranslation } from "react-i18next";
 export default function Header() {
   const router = useRouter();
   const { t } = useTranslation('footer');
+  console.log(router,'router')
 
   const footerLanguage:any = router.locale === 'ar' ? arHeader : enHeader;
   return (
-    <div className="bg-[#327886] container-fluid mx-auto px-4 sm:px-20 p-4  grid grid-cols-[20%_minmax(20%,_1fr)]  justify-between items-center border-b-[1px] border-[#ffffff3b]">
+    <div className={"container-fluid mx-auto px-4 sm:px-20 p-4  grid grid-cols-[20%_minmax(20%,_1fr)]  justify-between items-center border-b-[1px] border-[#ffffff3b] header   " + (router.pathname ? 'bg-transparent' : 'bg-[#327886] ')}>
       <div className="">
         <Link href="/">
           {" "}

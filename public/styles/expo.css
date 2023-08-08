@@ -69,11 +69,20 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 40% 50%;
-    padding: 0px 80px;
+    padding: 77px 80px 0px;
     align-items: center;
     gap: 10%;
     padding-bottom: 110px;
 }
+
+
+.hero-main{
+    top: -77px;
+  }
+  .header {
+    position: relative;
+    z-index: 999;
+  }
 .slick-current .banner-main h4 {
     top: 0;
 }
