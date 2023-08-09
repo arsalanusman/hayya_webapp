@@ -112,9 +112,9 @@ const FeaturedProjects = () => {
             <div className="banner-imges">
               <div>
                 <Image
-                  src="/expo-img/qatar01.png"
-                  width={342}
-                  height={462}
+                  src="/expo-img/qatars01.png"
+                  width={292}
+                  height={451}
                   alt="Picture of the author"
                   className="img-01"
                 />
@@ -144,9 +144,9 @@ const FeaturedProjects = () => {
             <div className="banner-imges">
               <div>
                 <Image
-                  src="/expo-img/qatar02.png"
-                  width={342}
-                  height={462}
+                  src="/expo-img/qatars02.png"
+                  width={292}
+                  height={451}
                   alt="Picture of the author"
                   className="img-01"
                 />
@@ -176,9 +176,9 @@ const FeaturedProjects = () => {
             <div className="banner-imges">
               <div>
                 <Image
-                  src="/expo-img/qatar03.png"
-                  width={342}
-                  height={462}
+                  src="/expo-img/qatars03.png"
+                  width={292}
+                  height={451}
                   alt="Picture of the author"
                   className="img-01"
                 />
@@ -208,9 +208,9 @@ const FeaturedProjects = () => {
             <div className="banner-imges">
               <div>
                 <Image
-                  src="/expo-img/qatar04.png"
-                  width={342}
-                  height={462}
+                  src="/expo-img/qatars04.png"
+                  width={292}
+                  height={451}
                   alt="Picture of the author"
                   className="img-01"
                 />

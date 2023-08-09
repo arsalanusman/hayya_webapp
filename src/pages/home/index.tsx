@@ -41,8 +41,7 @@ const HomePage =  () => {
         </Head>
         {isLoading &&
             <>
-        <Banner/>
-       
+        <Banner/>   
         <CarouselSlider />
         <Journey/>
         <Apply/>
