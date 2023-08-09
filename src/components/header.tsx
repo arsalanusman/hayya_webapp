@@ -13,6 +13,7 @@ import arHeader from "../../public/locales/ar/header.json";
 import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
 
+
 export default function Header() {
   const router = useRouter();
   const { t } = useTranslation('footer');

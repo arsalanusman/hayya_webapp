@@ -40,6 +40,7 @@
     "react-redux": "^8.1.1",
     "react-responsive-carousel": "^3.2.23",
     "react-slick": "^0.29.0",
+    "react-sticky-el": "^2.1.0",
     "redux": "^4.2.1",
     "tailwind-merge": "^1.14.0",
     "tailwindcss-animate": "^1.0.6"

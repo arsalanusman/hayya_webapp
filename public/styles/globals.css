@@ -141,3 +141,6 @@ input.PhoneInputInput {
 .w30{
   width: 30rem !important; 
 }
+.header {
+  background: #2f747f;
+}

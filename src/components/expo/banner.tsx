@@ -33,7 +33,7 @@ const FeaturedProjects = () => {
     speed: 900,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     fade: true,
     autoplaySpeed: 6000,
     cssEase: "linear",
@@ -100,7 +100,7 @@ const FeaturedProjects = () => {
             <div className="text">
               <h4>{t(homepageLanguage["slider1"].subHeading)}</h4>
               <h1>
-                Qatar Expo <br></br>2023
+                Qatar Expo 2023
               </h1>
               <p>
                 The International Horticultural Expo 2023 will be hosted by the
@@ -132,7 +132,7 @@ const FeaturedProjects = () => {
             <div className="text">
               <h4>the HAYYA EXPerience</h4>
               <h1>
-                Planning <br></br>a Road Trip?
+                Planning a Road Trip?
               </h1>
               <p>
                 The International Horticultural Expo 2023 will be hosted by the
@@ -164,7 +164,7 @@ const FeaturedProjects = () => {
             <div className="text">
               <h4>the HAYYA EXPerience</h4>
               <h1>
-                AFC Asian <br></br>Cup 2023
+                AFC Asian Cup 2023
               </h1>
               <p>
                 The International Horticultural Expo 2023 will be hosted by the
@@ -196,7 +196,7 @@ const FeaturedProjects = () => {
             <div className="text">
               <h4>the HAYYA EXPerience</h4>
               <h1>
-                Qatar Expo <br></br>2023
+                Qatar Expo 2023
               </h1>
               <p>
                 The International Horticultural Expo 2023 will be hosted by the

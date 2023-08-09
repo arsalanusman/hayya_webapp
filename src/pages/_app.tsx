@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import TopNavigation from "@/components/top-navigation";
-
+import Sticky from 'react-sticky-el';
 import store from '../store/store';
 import 'tailwindcss/tailwind.css';
 
@@ -26,7 +26,11 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <Provider store={store}>
       <TopNavigation />
+      <div className='Sticky-main'>
+      <Sticky>
       <Header />
+      </Sticky>
+      </div>
       <Component {...pageProps} />
       <Footer />
     </Provider>

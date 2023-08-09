@@ -33,22 +33,22 @@ const HomePage =  () => {
         }
     ,[])
 
-    return (<div className=" bg-[#F1F1F1]">
+    return (<>
        <Head>
         <title>Qatar Expo 2023</title>
           <link href="/styles/expo.css" rel="stylesheet" />
           <link href="/styles/slick.css" rel="stylesheet" />
         </Head>
         {isLoading &&
-            <>
+            <div className=" bg-[#F1F1F1] relative " >
         <Banner/>   
         <CarouselSlider />
         <Journey/>
         <Apply/>
         <Events/>
         <Mobileapp/>
-        </>
-    }</div>)
+        </div>
+    }</>)
 }
 
 
