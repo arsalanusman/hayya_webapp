@@ -1,4 +1,192 @@
 {
-  "slider1": 
-   { "subHeading": "the HAYYA EXPerience"}
+  "applySection": {
+    "heading": {
+      "howToApply": "How to apply?",
+      "mainTitle": "Hayya Entry Visa’s"
+    },
+    "selectOptions": {
+      "nationalityLabel": "You're?",
+      "residencyLabel": "You Have?",
+      "nationality": [
+        "Select Nationality",
+        "Angola",
+        "Austria"
+      ],
+      "residency": [
+        "Choose Country of Residency",
+        "Australia",
+        "Canada"
+      ]
+    },
+    "applyBoxes": [
+      {
+        "id": 1,
+        "type": "Type A",
+        "title": "Tourist Visa",
+        "description": "Are you planning to come to Qatar for visiting its beautiful spots? Request Hayya to enter the country",
+        "buttonText": "Apply for Tourist Visa"
+      },
+      {
+        "id": 2,
+        "type": "Type B",
+        "title": "Conferences & Events",
+        "description": "Will you attend an event or conference hosted in Qatar? To participate you need to get an Hayya",
+        "buttonText": "Apply for Hayya Visit"
+      },
+      {
+        "id": 3,
+        "type": "Type C",
+        "title": "Hayya with Me",
+        "description": "Do you receive a voucher code by a family member or a friends? Redeem your code and request Hayya.",
+        "buttonText": "Apply for Hayya with me"
+      }
+    ]
+  },
+  "eventsSection": {
+    "title": "What’s Trending",
+    "subtitle": "Qatar Events",
+    "events": [
+      {
+        "imageUrl": "/expo-img/events01.png",
+        "eventName": "Doha Expo 2023",
+        "eventDate": "Oct 12, 2023"
+      },
+      {
+        "imageUrl": "/expo-img/events02.png",
+        "eventName": "Doha Expo 2023",
+        "eventDate": "Oct 12, 2023"
+      },
+      {
+        "imageUrl": "/expo-img/events03.png",
+        "eventName": "Doha Expo 2023",
+        "eventDate": "Oct 12, 2023"
+      },
+      {
+        "imageUrl": "/expo-img/events04.png",
+        "eventName": "Doha Expo 2023",
+        "eventDate": "Oct 12, 2023"
+      },
+      {
+        "imageUrl": "/expo-img/events01.png",
+        "eventName": "Doha Expo 2023",
+        "eventDate": "Oct 12, 2023"
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "How it Goes?",
+    "subtitle": "Hayya Journey",
+    "journeyBoxes": [
+      {
+        "imageUrl": "/expo-img/journey01.png",
+        "heading": "Know your Visa Type",
+        "description": "Three VISA types are available based on your purpose of travel and/or your corresponding eligibility criteria."
+      },
+      {
+        "imageUrl": "/expo-img/journey02.png",
+        "heading": "Fill In three Stages",
+        "description": "Your personal, residence, and accommodation information will be collected and processed before approving your VISA."
+      },
+      {
+        "imageUrl": "/expo-img/journey03.png",
+        "heading": "Get your Hayya Card!",
+        "description": "After the provided information is reviewed and approved, your hayya digital card will be issued in no time."
+      }
+    ]
+  },
+  "mobileAppSection": {
+    "exploreMore": "EXPLORE MORE",
+    "appTitle": "Hayya Mobile App",
+    "appDescription": "Manage all of your activities through a unified window.",
+    "downloadDescription": "Download the app to manage your Hayya ID, keep track of your events and stay on track with your travel plan.",
+    "getAppNow": "Get the App NOW!",
+    "appStoreImages": [
+      { "imageUrl": "/expo-img/store01.png", "altText": "App Store 01" },
+      { "imageUrl": "/expo-img/store02.png", "altText": "App Store 02" }
+    ]
+  },
+  "servicesSection": {
+    "heading": "What you get",
+    "title": "Hayya Services",
+    "slides": [
+      {
+        "id": 1,
+        "heading": "Accommodation",
+        "subtitle": "Description",
+        "imageUrl": "/expo-img/services01.png",
+        "buttonText": "Learn More",
+        "buttonLink": "#slide1"
+      },
+      {
+        "id": 2,
+        "heading": "Transportation",
+        "subtitle": "Description",
+        "imageUrl": "/expo-img/services02.png",
+        "buttonText": "Learn More",
+        "buttonLink": "#slide2"
+      },
+      {
+        "id": 3,
+        "heading": "Health Insurance",
+        "subtitle": "Description",
+        "imageUrl": "/expo-img/services03.png",
+        "buttonText": "Learn More",
+        "buttonLink": "#slide2"
+      },
+      {
+        "id": 4,
+        "heading": "Venue Access",
+        "subtitle": "Description",
+        "imageUrl": "/expo-img/services04.png",
+        "buttonText": "Learn More",
+        "buttonLink": "#slide2"
+      },
+      {
+        "id": 5,
+        "heading": "02 Grand Pics",
+        "subtitle": "Information 2",
+        "imageUrl": "/expo-img/services01.png",
+        "buttonText": "Learn More",
+        "buttonLink": "#slide2"
+      }
+    ]
+  },
+  "slides": [
+    {
+      "title": "01",
+      "subTitle": "the HAYYA EXPerience",
+      "expoTitle": "Doha Expo 2023",
+      "info": "INFORMATION",
+      "description": "The International Horticultural Expo 2023 will be hosted by the State of Qatar. Located on the west of Doha city, 2,5km from West Bay, 3,5km from Doha Port and about 12km away from HIA.",
+      "imageUrl": "/expo-img/banner01.png",
+      "imageSrc": "/expo-img/qatars01.png"
+    },
+    {
+      "title": "02",
+      "subTitle": "the HAYYA EXPerience",
+      "expoTitle": "Planning a Road Trip?",
+      "info": "INFORMATION",
+      "description": "GCC residents can pre-register their vehicles with their beloved accompanying passengers and save  time and effort at Qatar’s Abu-Samra border checkpoint.",
+      "imageUrl": "/expo-img/banner02.png",
+      "imageSrc": "/expo-img/qatars02.png"
+    },
+    {
+      "title": "03",
+      "subTitle": "the HAYYA EXPerience",
+      "expoTitle": "AFC Asian Cup 2023",
+      "info": "INFORMATION",
+      "description": "The AFC Asian Cup Qatar 2023™ is all set to take place in Qatar and will see Asia’s top 24 nations eyeing one of the most prestigious titles in Asian football.",
+      "imageUrl": "/expo-img/banner03.png",
+      "imageSrc": "/expo-img/qatars03.png"
+    },
+    {
+      "title": "04",
+      "subTitle": "the HAYYA EXPerience",
+      "expoTitle": "Grand Prix  2023",
+      "info": "INFORMATION",
+      "description": "Get up to speed with everything you need to know about the 2023 Qatar Grand Prix, which takes place at the 5.38-kilometre Lusail International Circuit on Sunday, October 8.",
+      "imageUrl": "/expo-img/banner04.png",
+      "imageSrc": "/expo-img/qatars04.png"
+    }
+  ]
 }

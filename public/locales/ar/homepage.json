@@ -1,4 +1,214 @@
 {
-  "slider1": 
-   { "subHeading": "تجربة هَيّـا"}
+  "applySection": {
+    "heading": {
+      "howToApply": "كيف تقدم؟",
+      "mainTitle": "انواع فيزا هَيّـا"
+    },
+    "selectOptions": {
+      "nationalityLabel": "جنسيتك؟",
+      "residencyLabel": "لديك اقامة؟",
+      "nationality": [
+        "اختر الجنسية",
+        "أنغولا",
+        "النمسا"
+      ],
+      "residency": [
+        "اختر بلد الإقامة",
+        "أستراليا",
+        "كندا"
+      ]
+    },
+    "applyBoxes": [
+      {
+        "id": 1,
+        "type": "النوع أ",
+        "title": "سمة الدخول السياحية",
+        "description": "هل تخطط للمجيء إلى قطر لزيارة مواقعها الجميلة؟ اطلب بطاقة هَيّا لدخول البلاد",
+        "buttonText": "التقديم للحصول على تأشيرة سياحية"
+      },
+      {
+        "id": 2,
+        "type": "النوع ب",
+        "title":"تصريح الدخول للفعاليات والمؤتمرات",
+        "description": "هل ستحضر حدثًا أو مؤتمرًا تستضيفه قطر؟ للمشاركة يجب أن تحصل على بطاقة هَيّا",
+        "buttonText": "التقديم لزيارة هيّا"
+      },
+      {
+        "id": 3,
+        "type": "النوع ج",
+        "title": "هَيّـا معي",
+        "description": "هل تتلقى رمز قسيمة من قبل أحد أفراد الأسرة أو الأصدقاء؟ استرد رمزك واطلب بطاقة هَيّا معي.",
+        "buttonText": "التقديم لهيّا معي"
+      }
+    ],
+    "slides": [
+      {
+        "title": "01",
+        "expoTitle": "معرض الدوحة 2023",
+        "info": "معلومات"
+      },
+      {
+        "title": "02",
+        "expoTitle": "معرض الدوحة 2023",
+        "info": "معلومات"
+      },
+      {
+        "title": "03",
+        "expoTitle": "معرض الدوحة 2023",
+        "info": "معلومات"
+      },
+      {
+        "title": "04",
+        "expoTitle": "معرض الدوحة 2023",
+        "info": "معلومات"
+      }
+    ]
+  },
+  "eventsSection": {
+    "title": "ما هو الرائج الآن؟",
+    "subtitle": "فعاليات قطر",
+    "events": [
+      {
+        "imageUrl": "/expo-img/events01.png",
+        "eventName": "دوحة اكسبو ٢٠٢٣",
+        "eventDate": "١٢ اكتوبر ٢٠٢٣"
+      },
+      {
+        "imageUrl": "/expo-img/events02.png",
+        "eventName": "قراند بري ٢٠٢٣",
+        "eventDate": "١٢ اكتوبر ٢٠٢٣"
+      },
+      {
+        "imageUrl": "/expo-img/events03.png",
+        "eventName": "كأس آسيا ٢٠٢٣",
+        "eventDate": "١٢ اكتوبر ٢٠٢٣"
+      },
+      {
+        "imageUrl": "/expo-img/events04.png",
+        "eventName":"معرض جنيفا للسيارات ٢٠٢٣",
+        "eventDate": "١٢ اكتوبر ٢٠٢٣"
+      },
+      {
+        "imageUrl": "/expo-img/events01.png",
+        "eventName":"معرض جنيفا للسيارات ٢٠٢٣",
+        "eventDate": "١٢ اكتوبر ٢٠٢٣"
+      }
+    ]
+  },
+  "journeySection": {
+    "title": "ما هي الخطوات؟ ",
+    "subtitle": "خطوات هَيّـا",
+    "journeyBoxes": [
+      {
+        "imageUrl": "/expo-img/journey01.png",
+        "heading": "تعرف على نوع الفيزا",
+        "description": "تتوفر ثلاثة أنواع من التأشيرات بناء على الغرض من السفر و / أو معايير الأهلية المقابلة لك."
+      },
+      {
+        "imageUrl": "/expo-img/journey02.png",
+        "heading": "املا مراحل الاستمارة الثلاثة",
+        "description": "سيتم جمع معلوماتك الشخصية والإقامة والإقامة ومعالجتها قبل الموافقة على تأشيرتك."
+      },
+      {
+        "imageUrl": "/expo-img/journey03.png",
+        "heading": "احصل على بطاقة هَيّا",
+        "description": "بعد مراجعة المعلومات المقدمة والموافقة عليها، سيتم إصدار بطاقة هَيّا الرقمية الخاصة بك في أي وقت من الأوقات."
+      }
+    ]
+  },
+  "mobileAppSection": {
+    "exploreMore": "استكشف المزيد",
+    "appTitle": "تطبيق هيّـا",
+    "appDescription": "قم إدارة جميع الأنشطة الخاصة بك من خلال نافذة موحدة.",
+    "downloadDescription": "قم بتنزيل التطبيق لإدارة بطاقة هَيّـا الخاصة بك ، وتتبع  الاحداث والفعاليات التي تهمك.",
+    "getAppNow": "تحصل على التطبيق الآن!",
+    "appStoreImages": [
+      { "imageUrl": "/expo-img/store01.png", "altText": "متجر التطبيق 01" },
+      { "imageUrl": "/expo-img/store02.png", "altText": "متجر التطبيق 02" }
+    ]
+  },
+  "servicesSection": {
+    "heading": "ستحصل على ماذا ؟",
+    "title": "خدمات هَيّـا",
+    "slides": [
+      {
+        "id": 1,
+        "heading": "الاسكان",
+        "subtitle": "وصف",
+        "imageUrl": "/expo-img/services01.png",
+        "buttonText": "المزيد..",
+        "buttonLink": "#slide1"
+      },
+      {
+        "id": 2,
+        "heading": "التنقل",
+        "subtitle": "وصف",
+        "imageUrl": "/expo-img/services02.png",
+        "buttonText": "المزيد..",
+        "buttonLink": "#slide2"
+      },
+      {
+        "id": 3,
+        "heading": "التأمين الصحي",
+        "subtitle": "وصف",
+        "imageUrl": "/expo-img/services03.png",
+        "buttonText": "المزيد..",
+        "buttonLink": "#slide2"
+      },
+      {
+        "id": 4,
+        "heading": "الدخول للقاعات",
+        "subtitle": "وصف",
+        "imageUrl": "/expo-img/services04.png",
+        "buttonText": "المزيد..",
+        "buttonLink": "#slide2"
+      },
+      {
+        "id": 5,
+        "heading": "صورتين كبيرتين",
+        "subtitle": "وصف",
+        "imageUrl": "/expo-img/services01.png",
+        "buttonText": "المزيد..",
+        "buttonLink": "#slide2"
+      }
+    ]
+  },
+  "slides": [
+    {
+      "title": "01",
+      "subTitle": "تجربة هَيّـا",
+      "expoTitle": "معرض إكسبو ٢٠٢٣ الدوحة",
+      "description": "تستضيف دولة قطر المعرض الدولي 2023. يقع في غرب مدينة الدوحة، على بعد 2.5 كم من الخليج الغربي، و 3.5 كم من ميناء الدوحة, وحوالي 12 كم من مطار حمد الدولي.",
+      "info": "معلومات",
+      "imageUrl": "/expo-img/banner01.png",
+      "imageSrc": "/expo-img/qatars01.png"
+    },
+    {
+      "title": "02",
+      "subTitle": "تجربة هَيّـا",
+      "expoTitle": "تخطط لرحلة الى قطر؟",
+      "info": "معلومات",
+      "description": "يمكن للمقيمين في دول مجلس التعاون الخليجي تسجيل سياراتهم مسبقًا مع مسافريهم المحبوبين وتوفير الوقت والجهد عند نقطة تفتيش أبو سمرة الحدودية في قطر.",
+      "imageUrl": "/expo-img/banner02.png",
+      "imageSrc": "/expo-img/qatars02.png"
+    },
+    {
+      "title": "03",
+      "subTitle": "تجربة هَيّـا",
+      "expoTitle": "كأس آسيا٢٠٢٣",
+      "info": "معلومات",
+      "description": "من المقرر أن تقام بطولة كأس آسيا لكرة القدم قطر ٢٠٢٣ ™ في قطر وستشهد أفضل 24 دولة في آسيا تتطلع إلى الحصول على لقب واحد من أرقى الألقاب في كرة القدم الآسيوية.",
+      "imageUrl": "/expo-img/banner03.png",
+      "imageSrc": "/expo-img/qatars03.png"
+    },
+    {
+      "title": "04",
+      "subTitle": "تجربة هَيّـا",
+      "expoTitle": "سباق السرعة للفورمولا ١ ٢٠٢٣",
+      "info": "معلومات",
+      "description": "كن على دراية بكل ما تحتاج لمعرفته حول سباق السرعة للفورمولا ٢٠٢٣ ، والذي سيقام على حلبة لوسيل الدولية بطول 5.38 كيلومتر يوم الأحد 8 أكتوبر.",
+      "imageUrl": "/expo-img/banner04.png",
+      "imageSrc": "/expo-img/qatars04.png"
+    }
+  ]
 }

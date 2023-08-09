@@ -249,6 +249,7 @@
 
 .Journey-section {
     padding: 60px 0px 100px 0px;
+   direction: ltr;
 }
 .journey-box-main .journey-box.one:after {
     content: "";
@@ -483,6 +484,11 @@
     margin: auto;
 }
 
+.mobileapp-section.ar:after{
+
+    right: inherit;
+    left:0;
+}
 @media only screen and (max-width: 800px){
 
     .banner-main{

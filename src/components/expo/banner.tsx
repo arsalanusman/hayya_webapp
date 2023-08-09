@@ -14,13 +14,15 @@ import { useTranslation } from "react-i18next";
 const FeaturedProjects = () => {
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
-  const [slider1, setSlider1] = useState(null);
-  const [slider2, setSlider2] = useState(null);
+  const [slider1, setSlider1]:any = useState(null);
+  const [slider2, setSlider2]:any = useState(null);
+ 
+  
   const router = useRouter();
   const { t } = useTranslation("homepage");
-
   const homepageLanguage: any =
     router.locale === "ar" ? arHomepage : enHomepage;
+  const slides = homepageLanguage.slides;
 
   useEffect(() => {
     setNav1(slider1);
@@ -59,201 +61,63 @@ const FeaturedProjects = () => {
     ],
   };
 
-  const slides = [
-    {
-      title: "01",
-      expoTitle: "Doha Expo 2023",
-      info: "INFORMATION"
-    },
-    {
-      title: "02",
-      expoTitle: "Doha Expo 2023",
-      info: "INFORMATION"
-    },
-    {
-      title: "03",
-      expoTitle: "Doha Expo 2023",
-      info: "INFORMATION"
-    },
-    {
-      title: "04",
-      expoTitle: "Doha Expo 2023",
-      info: "INFORMATION"
-    }
-  ];
-
   return (
-    <div className="hero-main">
+    <div className='hero-main'>
       <Slider
-        className="slider-for"
+        className='slider-for'
         {...settingsMain}
-        asNavFor={nav2 as any}
-        ref={(slider) => setSlider1(slider as any)}
+        asNavFor={slider2}
+        ref={(slider:any) => setSlider1(slider)}
       >
-        <div>
-          <div
-            className="banner-main"
-            style={{
-              background: `linear-gradient(359deg,rgb(0 0 0 / 29%) 50%,rgb(0 0 0 / 63%) 100%,rgb(0 0 0 / 16%) 0), url(${banner01})`,
-            }}
-          >
-            <div className="text">
-              <h4>{t(homepageLanguage["slider1"].subHeading)}</h4>
-              <h1>
-                Qatar Expo 2023
-              </h1>
-              <p>
-                The International Horticultural Expo 2023 will be hosted by the
-                State of Qatar. Located on the west of Doha city, 2,5km from
-                West Bay, 3,5km from Doha Port and about 12km away from HIA.
-              </p>
-              <button>Learn More</button>
-            </div>
-            <div className="banner-imges">
-              <div>
-                <Image
-                  src="/expo-img/qatars01.png"
-                  width={292}
-                  height={451}
-                  alt="Picture of the author"
-                  className="img-01"
-                />
+        {slides.map((slide:any, index:any) => (
+          <div key={index}>
+            <div
+              className='banner-main'
+              style={{
+                background: `linear-gradient(359deg,rgb(0 0 0 / 29%) 50%,rgb(0 0 0 / 63%) 100%,rgb(0 0 0 / 16%) 0), url(${slide.imageUrl})`,
+              }}
+            >
+              <div className='text'>
+                <h4>{slide.subTitle}</h4>
+                <h1>{slide.expoTitle}</h1>
+                <p>{slide.description}</p>
+                <button>Learn More</button>
+              </div>
+              <div className='banner-imges'>
+                <div>
+                  <Image
+                    src={slide.imageSrc}
+                    width={292}
+                    height={451}
+                    alt='Picture of the author'
+                    className='img-01'
+                  />
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div>
-          <div
-            className="banner-main"
-            style={{
-              background: `linear-gradient(359deg,rgb(0 0 0 / 29%) 50%,rgb(0 0 0 / 63%) 100%,rgb(0 0 0 / 16%) 0), url(${banner02})`,
-            }}
-          >
-            <div className="text">
-              <h4>the HAYYA EXPerience</h4>
-              <h1>
-                Planning a Road Trip?
-              </h1>
-              <p>
-                The International Horticultural Expo 2023 will be hosted by the
-                State of Qatar. Located on the west of Doha city, 2,5km from
-                West Bay, 3,5km from Doha Port and about 12km away from HIA.
-              </p>
-              <button>Learn More</button>
-            </div>
-            <div className="banner-imges">
-              <div>
-                <Image
-                  src="/expo-img/qatars02.png"
-                  width={292}
-                  height={451}
-                  alt="Picture of the author"
-                  className="img-01"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div
-            className="banner-main"
-            style={{
-              background: `linear-gradient(359deg,rgb(0 0 0 / 29%) 50%,rgb(0 0 0 / 63%) 100%,rgb(0 0 0 / 16%) 0), url(${banner03})`,
-            }}
-          >
-            <div className="text">
-              <h4>the HAYYA EXPerience</h4>
-              <h1>
-                AFC Asian Cup 2023
-              </h1>
-              <p>
-                The International Horticultural Expo 2023 will be hosted by the
-                State of Qatar. Located on the west of Doha city, 2,5km from
-                West Bay, 3,5km from Doha Port and about 12km away from HIA.
-              </p>
-              <button>Learn More</button>
-            </div>
-            <div className="banner-imges">
-              <div>
-                <Image
-                  src="/expo-img/qatars03.png"
-                  width={292}
-                  height={451}
-                  alt="Picture of the author"
-                  className="img-01"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div
-            className="banner-main"
-            style={{
-              background: `linear-gradient(359deg,rgb(0 0 0 / 29%) 50%,rgb(0 0 0 / 63%) 100%,rgb(0 0 0 / 16%) 0), url(${banner04})`,
-            }}
-          >
-            <div className="text">
-              <h4>the HAYYA EXPerience</h4>
-              <h1>
-                Qatar Expo 2023
-              </h1>
-              <p>
-                The International Horticultural Expo 2023 will be hosted by the
-                State of Qatar. Located on the west of Doha city, 2,5km from
-                West Bay, 3,5km from Doha Port and about 12km away from HIA.
-              </p>
-              <button>Learn More</button>
-            </div>
-            <div className="banner-imges">
-              <div>
-                <Image
-                  src="/expo-img/qatars04.png"
-                  width={292}
-                  height={451}
-                  alt="Picture of the author"
-                  className="img-01"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
+        ))}
       </Slider>
-      <div className="sliderthumMian">
+      <div className='sliderthumMian'>
         <Slider
-          className="slider-nav"
+          className='slider-nav'
           {...settingsThumbs}
-          asNavFor={nav1 as any}
-          ref={(slider) => setSlider2(slider as any)}
+          asNavFor={slider1}
+          ref={(slider:any) => setSlider2(slider)}
         >
-        {router.locale === "ar"
-            ? slides.slice().reverse().map((slide, index) => (
-                <div key={index}>
-                  <div className="slider-bottom">
-                    <div>
-                      <h2>{slide.title}</h2>
-                    </div>
-                    <div>
-                      <h4>{slide.expoTitle}</h4>
-                      <p>{slide.info}</p>
-                    </div>
-                  </div>
+          {slides.map((slide:any, index:any) => (
+            <div key={index}>
+              <div className='slider-bottom'>
+                <div>
+                  <h2>{slide.title}</h2>
                 </div>
-              ))
-            : slides.map((slide, index) => (
-                <div key={index}>
-                  <div className="slider-bottom">
-                    <div>
-                      <h2>{slide.title}</h2>
-                    </div>
-                    <div>
-                      <h4>{slide.expoTitle}</h4>
-                      <p>{slide.info}</p>
-                    </div>
-                  </div>
+                <div>
+                  <h4>{slide.expoTitle}</h4>
+                  <p>{slide.info}</p>
                 </div>
-              ))}
-
+              </div>
+            </div>
+          ))}
         </Slider>
       </div>
     </div>

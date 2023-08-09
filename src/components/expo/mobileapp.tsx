@@ -1,72 +1,50 @@
 // components/Slider.js
 import React from 'react';
 import Image from "next/image";
+import enHomepage from "../../../public/locales/en/homepage.json";
+import arHomepage from "../../../public/locales/ar/homepage.json";
+import { useRouter } from "next/router";
+import { useTranslation } from "react-i18next";
 
 
 const Mobileapp = () => {
+  const router = useRouter();
+  const { t } = useTranslation("homepage");
+  const homepageLanguage: any =
+    router.locale === "ar" ? arHomepage : enHomepage; 
+    const { exploreMore, appTitle, appDescription, downloadDescription, getAppNow, appStoreImages } = homepageLanguage.mobileAppSection;
 
-  return (
-  <div className='mobileapp-section'>
-     <div className='container mx-auto'>
-        <div className='expo-heading '>
-              <div className='get flex gap-2 justify-center mb-3'>
-                  <Image
-                      src="/expo-img/Star.svg"
-                      width={16}
-                      height={16}
-                      alt="Picture of the author"
-                    />{" "}
-                    <div className='text-[16px] font-semibold tracking-[.1em] uppercase'>EXPLORE MORE</div>
-              </div>
-              <div className='Merriweather text-3xl sm:text-5xl font-extrabold mb-4'>Hayya Mobile App</div>
-              <Image
-                      src="/expo-img/line.png"
-                      width={162}
-                      height={10}
-                      alt="Picture of the author"
-                      className='mx-auto'
-                    />{" "}
-        </div>
-
-        <div className='mobileapp-main'>
+    return (
+      <div className={'mobileapp-section ' + router.locale}>
+        <div className='container mx-auto'>
+          <div className='expo-heading '>
+            <div className='get flex gap-2 justify-center mb-3'>
+              <Image src='/expo-img/Star.svg' width={16} height={16} alt='Picture of the author' />{' '}
+              <div className='text-[16px] font-semibold tracking-[.1em] uppercase'>{exploreMore}</div>
+            </div>
+            <div className='Merriweather text-3xl sm:text-5xl font-extrabold mb-4'>{appTitle}</div>
+            <Image src='/expo-img/line.png' width={162} height={10} alt='Picture of the author' className='mx-auto' />{' '}
+          </div>
+          <div className='mobileapp-main'>
             <div className='lft'>
-              <Image
-                  src="/expo-img/iPhone.png"
-                  width={496}
-                  height={687}
-                  alt="Picture of the author"
-                />
-              </div>
-              <div className='rgt'>
-                <h1>Manage all of your activities through 
-                  a unified window.</h1>
-                  <p>Download the app to manage your Hayya ID, keep track of your events and stay on track with your travel plan.</p>
-                  <h4>Get the App NOW!</h4>
-                  <div className='button-main'>
-                      <div>  <Image
-                        src="/expo-img/store01.png"
-                        width={135}
-                        height={40}
-                        alt="Picture of the author"
-                      /></div>
-                      <div><Image
-                        src="/expo-img/store02.png"
-                        width={135}
-                        height={40}
-                        alt="Picture of the author"
-                      /></div>
+              <Image src='/expo-img/iPhone.png' width={496} height={687} alt='Picture of the author' />
+            </div>
+            <div className='rgt'>
+              <h1>{appDescription}</h1>
+              <p>{downloadDescription}</p>
+              <h4>{getAppNow}</h4>
+              <div className='button-main'>
+                {appStoreImages.map((storeImage:any, index:number) => (
+                  <div key={index}>
+                    <Image src={storeImage.imageUrl} width={135} height={40} alt={storeImage.altText} />
                   </div>
+                ))}
               </div>
-
-        </div>  
-
-      
-
-     </div>
-
-
-  </div>
-  );
-};
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  };
 
 export default Mobileapp;
