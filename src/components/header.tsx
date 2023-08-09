@@ -20,7 +20,7 @@ export default function Header() {
 
   const footerLanguage:any = router.locale === 'ar' ? arHeader : enHeader;
   return (
-    <div className={"container-fluid mx-auto px-4 sm:px-20 p-4  grid grid-cols-[20%_minmax(20%,_1fr)]  justify-between items-center border-b-[1px] border-[#ffffff3b] header   " + (router.pathname ? 'bg-transparent' : 'bg-[#327886] ')}>
+    <div className={"container-fluid mx-auto px-4 sm:px-20 p-4  grid grid-cols-[20%_minmax(20%,_1fr)]  justify-between items-center border-b-[1px] border-[#ffffff3b] header   " + (router.pathname ? router.pathname.replace('/','') : '')}>
       <div className="">
         <Link href="/">
           {" "}
