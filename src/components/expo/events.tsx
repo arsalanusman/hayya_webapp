@@ -47,11 +47,11 @@ const Events = () => {
       <div className='container mx-auto'>
         <div className='expo-heading '>
           <div className='get flex gap-2 justify-center mb-3'>
-            <Image src='/expo-img/Star.svg' width={16} height={16} alt='Picture of the author' />{' '}
+            <Image   className='expo-headingimg02' src='/expo-img/Star.svg' width={16} height={16} alt='Picture of the author' />{' '}
             <div className='text-[16px] font-semibold tracking-[.1em] uppercase'>{title}</div>
           </div>
           <div className='Merriweather text-3xl sm:text-5xl font-extrabold mb-4'>{subtitle}</div>
-          <Image src='/expo-img/line.png' width={162} height={10} alt='Picture of the author' className='mx-auto' />{' '}
+          <Image src='/expo-img/line.png' width={162} height={10} alt='Picture of the author' className='mx-auto expo-headingimg01' />{' '}
         </div>
         <Slider {...settings}>
           {events.map((event:any, index:number) => (
