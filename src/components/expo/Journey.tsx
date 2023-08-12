@@ -14,7 +14,7 @@ const Journey = () => {
     router.locale === "ar" ? arHomepage : enHomepage;
   const { title, subtitle, journeyBoxes } = homepageLanguage.journeySection;
   return (
-    <div className='Journey-section'>
+    <div className={'Journey-section ' + router.locale} >
     <div className='container mx-auto'>
       <div className='expo-heading '>
         <div className='get flex gap-2 justify-center mb-3'>
@@ -23,6 +23,7 @@ const Journey = () => {
             width={16}
             height={16}
             alt="Picture of the author"
+            className='expo-headingimg02'
           />{" "}
           <div className='text-[16px] font-semibold tracking-[.1em] uppercase'>{title}</div>
         </div>
@@ -32,7 +33,7 @@ const Journey = () => {
           width={162}
           height={10}
           alt="Picture of the author"
-          className='mx-auto'
+          className='mx-auto expo-headingimg01'
         />{" "}
       </div>
 
@@ -45,6 +46,7 @@ const Journey = () => {
                 width={index === 2 ? 199 : 81}
                 height={index === 2 ? 200 : 82}
                 alt="Picture of the author"
+                className='subanimation'
               />
             </div>
             <div className='text'>
