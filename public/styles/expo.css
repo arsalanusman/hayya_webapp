@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 .Merriweather{
     font-family: 'Merriweather', serif;
 }
@@ -488,6 +488,12 @@
 
     right: inherit;
     left:0;
+}
+.session-img-shape{
+    clip-path: polygon(0 0, 100% 0, 87% 49%, 100% 100%, 80% 100%, 20% 100%, 0 100%, 0% 20%);
+}
+.inria-serif-font{
+    font-family: 'Inria Serif', serif;
 }
 @media only screen and (max-width: 800px){
 

@@ -144,3 +144,13 @@ input.PhoneInputInput {
 .header {
   background: #2f747f;
 }
+.long-border:before{
+content: "";
+display: block;
+position: absolute;
+inset-block: 0;
+margin-block: auto;
+width: 290px;
+height: 1;
+background-color: #881A38;
+}
