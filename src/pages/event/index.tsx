@@ -36,7 +36,7 @@ const WorldCup = ({ events }: any) => {
                         {event.title}
                       </h3>
                       <p className="text-[#ffffff] text-[14px]">
-                        {moment(event.eventStart).format("D MMM")} | 
+                        {moment(event.eventStart).format("D MMM")} |  {" "}
                         {moment(event.eventStart).format("hh:mm A")} -{" "}
                         {moment(event.eventEnd).format("hh:mm A")}
                       </p>
