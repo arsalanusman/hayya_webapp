@@ -13,6 +13,7 @@ import { useRouter } from "next/navigation";
 import Backbutton from "@/components/ui/backhomebuuton";
 import { useEffect, useState } from "react";
 import moment from "moment";
+import FullScreenImageModal from "@/components/fullscreen-popup";
 
 const WorldCupById = ({ event, ticketsData }:any) => {
   const Router = useRouter();
@@ -25,8 +26,23 @@ const WorldCupById = ({ event, ticketsData }:any) => {
   const [ticketsInfo, setTicketsInfo] = useState(ticketsData ? ticketsData  :[]);
   const [selectedSessionTickets, setSelectedSessionTickets]:any = useState(null);
   const [success, setSuccess] = useState(false);
+  const [showModal, setShowModal] = useState(false);
+  const [selectedImage, setSelectedImage] = useState('');
+
+  const openModal = (imageUrl:any) => {
+    console.log(imageUrl.src,'imageUrl')
+    setSelectedImage(imageUrl.src);
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setSelectedImage('');
+    setShowModal(false);
+  };
+
 
   const handleSessionClick = (selectedSession:any) => {
+    setSelectedSessionTickets('')
      setSession(selectedSession);
   };
   
@@ -163,13 +179,17 @@ const WorldCupById = ({ event, ticketsData }:any) => {
                           Successfully Book you Tickets 
                         </h3><br ></br></div>
                 }</div>
-                <div><Image src={stedium} alt="stedium"/></div>
+                <div><Image src={stedium} alt="stedium" 
+                 onClick={() => openModal(stedium)}/></div>
               </div>
                 <div className="text-center py-5">
                 <button onClick={()=>setSuccess(true)} className="bg-[#881A38] text-white py-3 px-[60px] rounded-[20px]">
                     Checkout</button>
                 </div>
               </div>
+              {showModal && (
+                <FullScreenImageModal imageUrl={selectedImage} onClose={closeModal} />
+              )}
             </div>
           </div>
         </div>
