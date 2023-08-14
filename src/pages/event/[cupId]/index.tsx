@@ -7,6 +7,7 @@ import eventDtlImg from "../../../../public/img/02.png";
 import calendar from "../../../../public/img/calendar.svg";
 import clock from "../../../../public/img/clock.svg";
 import location from "../../../../public/img/location.svg";
+import stedium from "../../../../public/img/stadium.png"
 import { useRouter } from "next/navigation";
 
 import Backbutton from "@/components/ui/backhomebuuton";
@@ -67,12 +68,12 @@ const WorldCupById = ({ event }:any) => {
             <div className="container">
               <div className="bg-[#F6F6F6] px-8 py-10 rounded-2xl">
                 <button
-                  className="text-[#881A38] ml-auto block inria-serif-font text-[28px]"
-                  onClick={() => Router.push("/world-cup")}
+                  className="text-[#881A38] ml-auto  block inria-serif-font text-[28px]"
+                  onClick={() => Router.push("/event")}
                 >
                   Back
                 </button>
-                <p className="text-[#881A38] mb-6 inria-serif-font text-[28px]">
+                <p className="text-[#881A38] mb-6  text-center md:text-left inria-serif-font text-[28px]">
                   Event Information
                 </p>
                 <div className="sm:grid block grid-cols-12 sm:gap-y-0 gap-y-5 gap-x-10 mb-5">
@@ -89,7 +90,7 @@ const WorldCupById = ({ event }:any) => {
                   </div>
                   <div className="lg:col-span-4 sm:col-span-8 col-span-12 inria-serif-font">
                     <div>
-                      <h3 className="text-[#881A38] mb-10 text-[22px]">
+                      <h3 className="text-[#881A38] mb-10  text-[22px]">
                         {event.title}
                       </h3>
                       <p className="mb-3 text-[22px]">
@@ -112,68 +113,73 @@ const WorldCupById = ({ event }:any) => {
                     </div>
                   </div>
                 </div>
-                {!success ? 
-                <>
-                <div> 
-                    <p className="text-[#881A38] mb-6 inria-serif-font text-[28px]">
-                     Session
-                    </p>
-                    <ul className="grid grid-cols-5 gap-4 mb-6">
-                        {ticketsInfo.length && ticketsInfo.map((item:any,index:any)=>
-                          <li  onClick={() => handleSessionClick(item)} key={index} className={"border rounded-md hover:border-4 p-2 bg-white cursor-pointer " + (session && item.id == session['id'] ? "border-4":"border-2")} >
-                              <h4 className="text-lg">{item.title}</h4>
-                              <p className="text-sm text-slate-400">{moment(item.sessionStart).format('D MMM')} <br /> 
-                              {moment(item.sessionStart).format('hh:mm A')} -{' '}
-                              {moment(item.sessionEnd).format('hh:mm A')}</p>
-                          </li>
-                        )}
-                    </ul>
-                </div>
-                {session && session?.ticketsInfo?.ticketPackages?.length ? 
-                <>
-                <div> 
-                    <p className="text-[#881A38] mb-6 inria-serif-font text-[28px]">
-                     Ticket Category
-                    </p>
-                    
-                    <ul className="grid grid-cols-5 gap-4 mb-6">
-                        {session?.ticketsInfo?.ticketPackages.map((item:any,index:number)=>
-                         <li key={index} onClick={()=>handleSelectCategory(item)} className={"border hover:border-4 rounded-md text-center p-2 bg-white cursor-pointer " + (selectedSessionTickets && item.id == selectedSessionTickets.id ? "border-4":"border-2")}>
-                           <h4 className="text-lg">{item.title}</h4>
-                          </li>
-                        )}
-                    </ul>
-                </div>
-                {console.log(selectedSessionTickets,'selectedSessionTickets')}
-                {selectedSessionTickets && 
-                <div> 
-                    <p className="text-[#881A38] mb-6 inria-serif-font text-[28px]">
-                     Ticket
-                    </p>
-                    <ul className="grid grid-cols-2 gap-4 mb-6">
-                        {selectedSessionTickets.tickets.length && selectedSessionTickets.tickets.map((item:any,index:number)=>
-                          <li key={index} className="border border-2 hover:border-4 grid grid-cols-2 rounded-md text-center p-2 bg-white">
-                              <div className="">
-                                  <h4 className="text-md">{item.title}</h4>
-                                  <p className="text-lg font-bold">{item.price} QAR</p>
-                              </div>
-                              <div className="flex items-center">
-                                  <button className="px-2 bg-gray-400 text-white focus:outline-none" onClick={()=>adult > 0 && setAdult(adult - 1)}>-</button>
-                                  <input type="number" className="w-10 text-center border border-gray-300 focus:outline-none" value={adult} />
-                                  <button className="px-2 bg-gray-400 text-white focus:outline-none" onClick={()=>setAdult(adult + 1)}>+</button>
-                              </div>
-                          </li>
-                        )}
-                    </ul>
-                </div>}
-                </> 
-                : <p>No Tickets Avalable</p>
-                
-              }
-              </> : <div> <br ></br><h3 className="text-[#881A38] mb-10 text-center text-[22px]">
-                        Successfully Book you Tickets
-                      </h3><br ></br></div>
-              }
+                <div  className="grid grid-cols-1  sm:grid-cols-1 md:grid-cols-3 gap-4 mb-6 ">
+                  <div className="col-span-2">
+                  {!success ? 
+                  <>
+                  <div> 
+                      <p className="text-[#881A38] mb-6 inria-serif-font text-[28px]">
+                      Session
+                      </p>
+                      <ul className="grid grid-cols-1   sm:grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                          {ticketsInfo.length && ticketsInfo.map((item:any,index:any)=>
+                            <li  onClick={() => handleSessionClick(item)} key={index} className={"border rounded-md hover:border-4 p-2 bg-white cursor-pointer " + (session && item.id == session['id'] ? "border-4 border-red-900":"border-2")} >
+                                <h4 className="text-lg">{item.title}</h4>
+                                <p className="text-sm text-slate-400">{moment(item.sessionStart).format('D MMM')} <br /> 
+                                  {moment(item.sessionStart).format('hh:mm A')} -{' '}
+                                  {moment(item.sessionEnd).format('hh:mm A')}</p>
+                            </li>
+                          )}
+                      </ul>
+                  </div>
+                  {session && session?.ticketsInfo?.ticketPackages?.length ? 
+                  <>
+                  <div> 
+                      <p className="text-[#881A38] mb-6 inria-serif-font text-[28px]">
+                      Ticket Category
+                      </p>
+                      
+                      <ul className="grid grid-cols-1  sm:grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                          {session?.ticketsInfo?.ticketPackages.map((item:any,index:number)=>
+                          <li key={index} onClick={()=>handleSelectCategory(item)} className={"border hover:border-4 rounded-md text-center p-2 bg-white cursor-pointer " + (selectedSessionTickets && item.id == selectedSessionTickets.id ? "border-4 border-red-900":"border-2")}>
+                            <h4 className="text-lg">{item.title}</h4>
+                            </li>
+                          )}
+                      </ul>
+                  </div>
+
+
+                  {selectedSessionTickets && 
+                  <div> 
+                      <p className="text-[#881A38] mb-6 inria-serif-font text-[28px]">
+                      Ticket
+                      </p>
+                      <ul className="grid grid-cols-1  sm:grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+                          {selectedSessionTickets.tickets.length && selectedSessionTickets.tickets.map((item:any,index:number)=>
+                            <li key={index} className="border border-2 hover:border-4 grid grid-cols-2 rounded-md text-center p-2 bg-white">
+                                <div className="">
+                                    <h4 className="text-md">{item.title}</h4>
+                                    <p className="text-lg font-bold">{item.price} QAR</p>
+                                </div>
+                                <div className="flex items-center">
+                                    <button className="px-2 bg-gray-400 text-white focus:outline-none" onClick={()=>adult > 0 && setAdult(adult - 1)}>-</button>
+                                    <input type="number" className="w-10 text-center border border-gray-300 focus:outline-none" value={adult} />
+                                    <button className="px-2 bg-gray-400 text-white focus:outline-none" onClick={()=>setAdult(adult + 1)}>+</button>
+                                </div>
+                            </li>
+                          )}
+                      </ul>
+                  </div>}
+                  </> 
+                  : <p>No Tickets Avalable</p>
+                  
+                }
+                </> : <div> <br ></br><h3 className="text-[#881A38] mb-20 mt-20 text-center text-[22px]">
+                          Successfully Book you Tickets 
+                        </h3><br ></br></div>
+                }</div>
+                <div><Image src={stedium} alt="stedium"/></div>
+              </div>
                 <div className="text-center py-5">
                 <button onClick={()=>setSuccess(true)} className="bg-[#881A38] text-white py-3 px-[60px] rounded-[20px]">
                     Checkout</button>
