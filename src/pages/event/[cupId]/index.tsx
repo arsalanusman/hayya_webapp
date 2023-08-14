@@ -14,7 +14,7 @@ import Backbutton from "@/components/ui/backhomebuuton";
 import { useEffect, useState } from "react";
 import moment from "moment";
 
-const WorldCupById = ({ event }:any) => {
+const WorldCupById = ({ event, ticketsData }:any) => {
   const Router = useRouter();
 
   const [adult,setAdult] = useState(0)
@@ -22,24 +22,9 @@ const WorldCupById = ({ event }:any) => {
   const [infant,setInfant] = useState(0)
   const [session,setSession]:any = useState(null)
   const [ticketCategory,setTicketCategory] = useState({})
-  const [ticketsInfo, setTicketsInfo] = useState([]);
+  const [ticketsInfo, setTicketsInfo] = useState(ticketsData ? ticketsData  :[]);
   const [selectedSessionTickets, setSelectedSessionTickets]:any = useState(null);
   const [success, setSuccess] = useState(false);
-
-  useEffect(() => {
-    // Fetch additional data after the component mounts
-    async function fetchTicketsInfo() {
-      try {
-        const response = await fetch(`http://ems-api-dev.microsysx.com/api/eventsession/ticketsinfobyeid/${event.id}`);
-        const ticketsData = await response.json();
-        setTicketsInfo(ticketsData); // Update state with fetched data
-      } catch (error) {
-        console.error('Error fetching tickets info:', error);
-      }
-    }
-
-    fetchTicketsInfo();
-  }, []); // The empty array [] as the second argument ensures the effect runs only once after mount
 
   const handleSessionClick = (selectedSession:any) => {
      setSession(selectedSession);
@@ -56,7 +41,7 @@ const WorldCupById = ({ event }:any) => {
         <title>World Cup</title>
         <link href="/styles/expo.css" rel="stylesheet" />
       </Head>
-      {console.log(event,'event')}
+      {console.log(event,ticketsData,'event')}
 
       <div className="container-fluid pb-10 px-4 sm:px-20 bg-gradient-to-t from-[#0C4532] to-[#327886] to-100%  mx-auto  h-full w-full ">
         <Backbutton />
@@ -198,11 +183,14 @@ export async function getServerSideProps(context:any) {
   // Fetch event details using the provided API endpoint and event ID
   const eventId = context.query.cupId; // Update with the specific event ID
   const response = await fetch(`http://ems-api-dev.microsysx.com/api/event/${eventId}`);
+  const ticketReponse = await fetch(`http://ems-api-dev.microsysx.com/api/eventsession/ticketsinfobyeid/${eventId}`);
+  const ticketsData = await ticketReponse.json();
   const event = await response.json();
 
   return {
     props: {
       event, // Pass the event details as props to the component
+      ticketsData
     },
   };
 }
