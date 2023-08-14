@@ -73,4 +73,10 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
 }
