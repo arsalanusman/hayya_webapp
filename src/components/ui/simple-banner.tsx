@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import bannerImg from '../../../public/img/banner.svg';
+import bannerImg from '../../../public/expo-img/AFC_banner.jpeg';
 
 const SimpleBanner = () => {
   return (

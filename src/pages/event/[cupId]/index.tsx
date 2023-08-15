@@ -3,11 +3,15 @@ import TopBar from "@/components/ui/top-bar";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import eventDtlImg from "../../../../public/img/02.png";
+import eventDtlImg from "../../../../public/expo-img/expo.jpeg";
 import calendar from "../../../../public/img/calendar.svg";
 import clock from "../../../../public/img/clock.svg";
 import location from "../../../../public/img/location.svg";
-import stedium from "../../../../public/img/stadium.png"
+import stedium from "../../../../public/expo-img/stadium.jpeg"
+
+import albayt from "../../../../public/expo-img/albayt.jpeg";
+import albaytStedium from "../../../../public/expo-img/albaytStadium.jpeg"
+
 import { useRouter } from "next/navigation";
 
 import Backbutton from "@/components/ui/backhomebuuton";
@@ -83,11 +87,15 @@ const WorldCupById = ({ event, ticketsData }:any) => {
                       src={event.gallery[0].mediaUrl}
                       alt="eventDtlImg"
                       className="w-full sm:mb-0 mb-5 rounded-lg"
-                    /> : <Image
-                      src={eventDtlImg}
+                    /> : event?.venue?.name ==  'Al Bayt Stadium' ? <Image
+                      src={albaytStedium}
                       alt="eventDtlImg"
                       className="w-full sm:mb-0 mb-5"
-                    />}
+                    /> : <Image
+                    src={eventDtlImg}
+                    alt="eventDtlImg"
+                    className="w-full sm:mb-0 mb-5"
+                  />}
                   </div>
                   <div className="lg:col-span-4 sm:col-span-8 col-span-12 inria-serif-font">
                     <div>
@@ -179,7 +187,7 @@ const WorldCupById = ({ event, ticketsData }:any) => {
                           Successfully Book you Tickets 
                         </h3><br ></br></div>
                 }</div>
-                <div><Image src={stedium} alt="stedium" 
+                <div><Image src={event?.venue?.name == 'Al Bayt Stadium' ?  albayt : stedium} alt="stedium" 
                  onClick={() => openModal(stedium)}/></div>
               </div>
                 <div className="text-center py-5">

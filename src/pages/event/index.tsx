@@ -12,7 +12,7 @@ const WorldCup = ({ events }: any) => {
   return (
     <>
       {/* ... (head and styling code) */}
-      <div className="container-fluid pb-10 px-4 sm:px-20 bg-gradient-to-t from-[#0C4532] to-[#327886] to-100%  mx-auto  h-full w-full ">
+      <div className="container-fluid pb-10 px-4 sm:px-20 bg-gradient-to-t from-[#1b123e] to-[#6b57d4] to-100%  mx-auto  h-full w-full ">
         <Backbutton />
         <div className="bg-white border-solid border-2 border-gray-100 rounded-2xl mx-0 p-5 sm:p-10 md:p-10 lg:p-10 xl:p-10 2xl:p-10">
           <TopBar />
