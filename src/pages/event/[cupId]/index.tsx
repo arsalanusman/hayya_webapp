@@ -55,6 +55,14 @@ const WorldCupById = ({ event, ticketsData }:any) => {
     setSelectedSessionTickets(event)
   }
 
+  const handleCheckout = (active:any) => {
+    if(active){
+      Router.push('https://pay.sandbox.checkout.com/page/hpp_TvSG2Zqjm56y?_pcf')
+    }else{
+      alert('Please select all required fields')
+    }
+  }
+
   return (
     <>
       <Head>
@@ -190,7 +198,7 @@ const WorldCupById = ({ event, ticketsData }:any) => {
                  onClick={() => openModal(stedium)}/></div>
               </div>
                 <div className="text-center py-5">
-                <button onClick={()=>setSuccess(true)} className="bg-[#881A38] text-white py-3 px-[60px] rounded-[20px]">
+                <button onClick={()=>handleCheckout(adult !== 0)} className={" text-white py-3 px-[60px] rounded-[20px]" + (adult === 0 ? ' bg-gray-300':' bg-[#881A38]')}>
                     Checkout</button>
                 </div>
               </div>
