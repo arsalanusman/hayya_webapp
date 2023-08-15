@@ -61,7 +61,6 @@ const WorldCupById = ({ event, ticketsData }:any) => {
         <title>World Cup</title>
         <link href="/styles/expo.css" rel="stylesheet" />
       </Head>
-      {console.log(event,ticketsData,'event')}
 
       <div className="container-fluid pb-10 px-4 sm:px-20 bg-gradient-to-t from-[#1b123e] to-[#6b57d4] to-100%  mx-auto  h-full w-full ">
         <Backbutton />
