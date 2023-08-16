@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
 
-const Booking = ({ event, type }: any) => {
+const Booking = ({ type, name, session, date, time }: any) => {
   const Router = useRouter();
 
   const countryOptions = [
@@ -230,10 +230,19 @@ const Booking = ({ event, type }: any) => {
         firstName: formData.firstName,
         lastName: formData.lastName,
         email: formData.email,
-        eventDetails: `Name: ${e.title}\nSession: ${e.session}\nDate: ${e.date}\nTime: ${e.time}`,
+        dob: formData.dob,
+        nationality: formData.nationality,
+        countryResidence: formData.countryResidence,
+        documentType: formData.documentType,
+        documentNumber: formData.documentNumber,
+        event_name:name, 
+        event_session:session.title, 
+        event_date:date, 
+        event_time:time 
       });
 
       console.log("Email sent:", response.data.message);
+      alert('Your Booking has confirmed!')
 
       setFormData({
         firstName: "",

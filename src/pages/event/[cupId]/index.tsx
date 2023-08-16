@@ -81,7 +81,7 @@ const WorldCupById = ({ event, ticketsData }: any) => {
           <TopBar />
           <SimpleBanner />
 
-          {success ? <Booking  type='c' /> : 
+          {success ? <Booking  type='Checkout' name={event.title} session={session} date={moment(event.eventStart).format("Do MMMM YYYY")} time={moment(event.eventStart).format("hh:mm A")}/> : 
             <div className="my-10">
               <div className="container">
                 <div className="bg-[#F6F6F6] px-8 py-10 rounded-2xl">
