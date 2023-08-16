@@ -2,8 +2,205 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useRouter } from "next/router";
 
-const Booking = ({ event }: any) => {
+const Booking = ({ event, type }: any) => {
   const Router = useRouter();
+
+  const countryOptions = [
+    "Afghanistan",
+    "Albania",
+    "Algeria",
+    "Andorra",
+    "Angola",
+    "Antigua and Barbuda",
+    "Argentina",
+    "Armenia",
+    "Austria",
+    "Azerbaijan",
+    "Bahrain",
+    "Bangladesh",
+    "Barbados",
+    "Belarus",
+    "Belgium",
+    "Belize",
+    "Benin",
+    "Bhutan",
+    "Bolivia",
+    "Bosnia and Herzegovina",
+    "Botswana",
+    "Brazil",
+    "Brunei",
+    "Bulgaria",
+    "Burkina Faso",
+    "Burundi",
+    "Cabo Verde",
+    "Cambodia",
+    "Cameroon",
+    "Canada",
+    "Central African Republic",
+    "Chad",
+    "Channel Islands",
+    "Chile",
+    "China",
+    "Colombia",
+    "Comoros",
+    "Congo",
+    "Costa Rica",
+    "Côte d'Ivoire",
+    "Croatia",
+    "Cuba",
+    "Cyprus",
+    "Czech Republic",
+    "Denmark",
+    "Djibouti",
+    "Dominica",
+    "Dominican Republic",
+    "DR Congo",
+    "Ecuador",
+    "Egypt",
+    "El Salvador",
+    "Equatorial Guinea",
+    "Eritrea",
+    "Estonia",
+    "Eswatini",
+    "Ethiopia",
+    "Faeroe Islands",
+    "Finland",
+    "France",
+    "French Guiana",
+    "Gabon",
+    "Gambia",
+    "Georgia",
+    "Germany",
+    "Ghana",
+    "Gibraltar",
+    "Greece",
+    "Grenada",
+    "Guatemala",
+    "Guinea",
+    "Guinea-Bissau",
+    "Guyana",
+    "Haiti",
+    "Holy See",
+    "Honduras",
+    "Hong Kong",
+    "Hungary",
+    "Iceland",
+    "India",
+    "Indonesia",
+    "Iran",
+    "Iraq",
+    "Ireland",
+    "Isle of Man",
+    "Israel",
+    "Italy",
+    "Jamaica",
+    "Japan",
+    "Jordan",
+    "Kazakhstan",
+    "Kenya",
+    "Kuwait",
+    "Kyrgyzstan",
+    "Laos",
+    "Latvia",
+    "Lebanon",
+    "Lesotho",
+    "Liberia",
+    "Libya",
+    "Liechtenstein",
+    "Lithuania",
+    "Luxembourg",
+    "Macao",
+    "Madagascar",
+    "Malawi",
+    "Malaysia",
+    "Maldives",
+    "Mali",
+    "Malta",
+    "Mauritania",
+    "Mauritius",
+    "Mayotte",
+    "Mexico",
+    "Moldova",
+    "Monaco",
+    "Mongolia",
+    "Montenegro",
+    "Morocco",
+    "Mozambique",
+    "Myanmar",
+    "Namibia",
+    "Nepal",
+    "Netherlands",
+    "Nicaragua",
+    "Niger",
+    "Nigeria",
+    "North Korea",
+    "North Macedonia",
+    "Norway",
+    "Oman",
+    "Pakistan",
+    "Panama",
+    "Paraguay",
+    "Peru",
+    "Philippines",
+    "Poland",
+    "Portugal",
+    "Qatar",
+    "Réunion",
+    "Romania",
+    "Russia",
+    "Rwanda",
+    "Saint Helena",
+    "Saint Kitts and Nevis",
+    "Saint Lucia",
+    "Saint Vincent and the Grenadines",
+    "San Marino",
+    "Sao Tome & Principe",
+    "Saudi Arabia",
+    "Senegal",
+    "Serbia",
+    "Seychelles",
+    "Sierra Leone",
+    "Singapore",
+    "Slovakia",
+    "Slovenia",
+    "Somalia",
+    "South Africa",
+    "South Korea",
+    "South Sudan",
+    "Spain",
+    "Sri Lanka",
+    "State of Palestine",
+    "Sudan",
+    "Suriname",
+    "Sweden",
+    "Switzerland",
+    "Syria",
+    "Taiwan",
+    "Tajikistan",
+    "Tanzania",
+    "Thailand",
+    "The Bahamas",
+    "Timor-Leste",
+    "Togo",
+    "Trinidad and Tobago",
+    "Tunisia",
+    "Turkey",
+    "Turkmenistan",
+    "Uganda",
+    "Ukraine",
+    "United Arab Emirates",
+    "United Kingdom",
+    "United States",
+    "Uruguay",
+    "Uzbekistan",
+    "Venezuela",
+    "Vietnam",
+    "Western Sahara",
+    "Yemen",
+    "Zambia",
+    "Zimbabwe",
+  ];
+  
   
   const [formData, setFormData] = useState({
     firstName: "",
@@ -65,7 +262,7 @@ const Booking = ({ event }: any) => {
             Back
             </button>
             <p className="text-[#881A38] mb-6  text-center md:text-left inria-serif-font text-[28px]">
-            Event Information
+            Personal Information
             </p>
             <form onSubmit={handleSubmit} className="grid grid-cols-2 gap-4">
                 <div className="col-span-2 sm:col-span-1">
@@ -96,7 +293,7 @@ const Booking = ({ event }: any) => {
                     required
                     />
                 </div>
-                <div className="col-span-2">
+                <div className="col-span-2 sm:col-span-1">
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700">
                     Email
                     </label>
@@ -139,32 +336,41 @@ const Booking = ({ event }: any) => {
                     />
                 </div>
                 <div className="col-span-2 sm:col-span-1">
-                    <label htmlFor="countryResidence" className="block text-sm font-medium text-gray-700">
+                  <label htmlFor="countryResidence" className="block text-sm font-medium text-gray-700">
                     Country of Residence
-                    </label>
-                    <input
-                    type="text"
+                  </label>
+                  <select
                     id="countryResidence"
                     name="countryResidence"
                     value={formData.countryResidence}
                     onChange={handleChange}
                     className="mt-1 p-2 block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     required
-                    />
+                  >
+                    <option value="" disabled>Select Country</option>
+                    {countryOptions.map((country, index) => (
+                      <option key={index} value={country}>
+                        {country}
+                      </option>
+                    ))}
+                  </select>
                 </div>
                 <div className="col-span-2 sm:col-span-1">
-                    <label htmlFor="documentType" className="block text-sm font-medium text-gray-700">
+                  <label htmlFor="documentType" className="block text-sm font-medium text-gray-700">
                     Document Type
-                    </label>
-                    <input
-                    type="text"
+                  </label>
+                  <select
                     id="documentType"
                     name="documentType"
                     value={formData.documentType}
                     onChange={handleChange}
                     className="mt-1 p-2 block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                     required
-                    />
+                  >
+                    <option value="" disabled>Select Document Type</option>
+                    <option value="Identity Card">Identity Card</option>
+                    <option value="Passport Number">Passport Number</option>
+                  </select>
                 </div>
                 <div className="col-span-2 sm:col-span-1">
                     <label htmlFor="documentNumber" className="block text-sm font-medium text-gray-700">
@@ -182,9 +388,9 @@ const Booking = ({ event }: any) => {
                 </div>
                 <button
                     type="submit"
-                    className="col-span-2 sm:col-span-2 bg-indigo-600 py-2 px-4 rounded-md text-white font-medium hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                    className="col-span-2 mt-5 sm:col-span-2 bg-[#881A38] py-2 px-4 rounded-md text-white font-medium hover:bg-[#881A38] focus:outline-none focus:ring  focus:ring-opacity-50"
                 >
-                    Book Now
+                   {type}
                 </button>
                 </form>
 

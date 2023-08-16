@@ -81,7 +81,7 @@ const WorldCupById = ({ event, ticketsData }: any) => {
           <TopBar />
           <SimpleBanner />
 
-          {success ? <Booking  type='c' /> : 
+          {success ? <Booking type='Request' /> : 
             <div className="my-10">
               <div className="container">
                 <div className="bg-[#F6F6F6] px-8 py-10 rounded-2xl">
