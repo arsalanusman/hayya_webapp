@@ -4,13 +4,13 @@ export default async (req, res) => {
   try {
     const { email, event_name, event_date, event_session, event_time } = req.body;
 
-    const apiKey = process.env.SENDGRID_API_KEY;
+    const apiKey = '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';
     if (!apiKey) {
       throw new Error("SendGrid API key not provided");
     }
 
-    sgMail.setApiKey('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');
-
+    // sgMail.setApiKey('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');
+    console.log(email)
     const msg = {
       to: email,
       from: {
