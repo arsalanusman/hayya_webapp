@@ -115,7 +115,7 @@ const WorldCup = ({ events }: any) => {
               </Select>
             </div>
             <div className="flex-1 p-4">
-            <Popover >
+              <Popover>
                 <PopoverTrigger asChild className="w-full">
                   <Button
                     variant={"outline"}
@@ -149,21 +149,42 @@ const WorldCup = ({ events }: any) => {
                   href={`/event/${event.id}`}
                   className="lg:col-span-4 sm:col-span-6 col-span-12"
                 >
-                  <div
-                    className="card mb-3  bg-[url(/img/afccup.jpeg)] overflow-hidden bg-no-repeat bg-cover sm:bg-bottom bg-center min-h-[236px] rounded-3xl relative"
-                    // style={{ backgroundImage: `url(${event.gallery[0].mediaUrl})` }}
-                  >
-                    <div className="absolute bottom-[0rem] px-4 py-3 w-full bg-[#000] bg-opacity-70">
-                      <h3 className="text-[24px] text-[#ffffff] font-bold">
-                        {event.title}
-                      </h3>
-                      <p className="text-[#ffffff] text-[14px]">
-                        {moment(event.eventStart).format("D MMM")} |{" "}
-                        {moment(event.eventStart).format("hh:mm A")} -{" "}
-                        {moment(event.eventEnd).format("hh:mm A")}
-                      </p>
-                    </div>
-                  </div>
+               
+                    {event.gallery && event.gallery.length > 0 ? (
+                      <div
+                      className="card mb-3 overflow-hidden bg-no-repeat bg-cover sm:bg-bottom bg-center min-h-[236px] rounded-3xl relative"
+                        style={{
+                          backgroundImage: `url(${event.gallery[0].mediaUrl})`,
+                        }}
+                      >
+                        <div className="absolute bottom-[0rem] px-4 py-3 w-full bg-[#000] bg-opacity-70">
+                          <h3 className="text-[24px] text-[#ffffff] font-bold">
+                            {event.title}
+                          </h3>
+                          <p className="text-[#ffffff] text-[14px]">
+                            {moment(event.eventStart).format("D MMM")} |{" "}
+                            {moment(event.eventStart).format("hh:mm A")} -{" "}
+                            {moment(event.eventEnd).format("hh:mm A")}
+                          </p>
+                        </div>
+                      </div>
+                    ) : (
+                      <div
+                      className="card mb-3 overflow-hidden bg-no-repeat bg-cover sm:bg-bottom bg-center min-h-[236px] rounded-3xl relative"
+                       style={{ backgroundImage: `url(/img/fallback.png)` }}>
+                        <div className="absolute bottom-[0rem] px-4 py-3 w-full bg-[#000] bg-opacity-70">
+                          <h3 className="text-[24px] text-[#ffffff] font-bold">
+                            {event.title}
+                          </h3>
+                          <p className="text-[#ffffff] text-[14px]">
+                            {moment(event.eventStart).format("D MMM")} |{" "}
+                            {moment(event.eventStart).format("hh:mm A")} -{" "}
+                            {moment(event.eventEnd).format("hh:mm A")}
+                          </p>
+                        </div>
+                      </div>
+                    )}
+                  
                 </Link>
               ))}
           </div>
@@ -174,8 +195,17 @@ const WorldCup = ({ events }: any) => {
 };
 
 export async function getServerSideProps() {
-  // Fetch events from the API
-  const response = await fetch("http://ems-api-dev.microsysx.com/api/event");
+  const headers = {
+    headers: {
+      clientType: "web",
+    },
+  };
+
+  // Fetch events from the API with the specified headers
+  const response = await fetch(
+    "http://ems-api-dev.microsysx.com/api/event",
+    headers
+  );
   const data = await response.json();
 
   return {
