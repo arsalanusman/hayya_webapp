@@ -4,12 +4,16 @@ export default async (req, res) => {
   try {
     const { firstName, lastName, email, dob, nationality, countryResidence, documentType, documentNumber } = req.body;
 
-    // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-    sgMail.setApiKey('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');
+    const apiKey = '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';
+    if (!apiKey) {
+      throw new Error("SendGrid API key not provided");
+    }
+
+    sgMail.setApiKey(apiKey);
 
     const msg = {
       to: email,
-      from: "driectdesign@gmail.com", // Replace with your verified sender email
+      from: "info@theroyalpunch.com", // Replace with your verified sender email
       subject: "Booking Confirmation",
       html: `<p>Thank you for the reservation</p>
             <p>Event Details:</p>
