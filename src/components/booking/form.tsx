@@ -225,23 +225,32 @@ const Booking = ({ type, name, session, date, time }: any) => {
     e.preventDefault();
 
     try {
+      await axios.post("https://qm-qa-api-uat.microsysx.com/api/EmailService/Send", {
+        "emailTo": formData.email,
+        "emailBody": `<p>Thank you for the reservation</p>
+        <p>Event Details:</p>
+        <p>Name: ${name}</p>
+        <p>Session: ${session.title}</p>
+        <p>Date: ${date}</p>
+        <p>Time: ${time}</p>`
+      })
       // Save form data to the database or perform other necessary actions
-      const response = await axios.post("/api/send-email", {
-        firstName: formData.firstName,
-        lastName: formData.lastName,
-        email: formData.email,
-        dob: formData.dob,
-        nationality: formData.nationality,
-        countryResidence: formData.countryResidence,
-        documentType: formData.documentType,
-        documentNumber: formData.documentNumber,
-        event_name:name, 
-        event_session:session.title, 
-        event_date:date, 
-        event_time:time 
-      });
+      // const response = await axios.post("/api/send-email", {
+      //   firstName: formData.firstName,
+      //   lastName: formData.lastName,
+      //   email: formData.email,
+      //   dob: formData.dob,
+      //   nationality: formData.nationality,
+      //   countryResidence: formData.countryResidence,
+      //   documentType: formData.documentType,
+      //   documentNumber: formData.documentNumber,
+      //   event_name:name, 
+      //   event_session:session.title, 
+      //   event_date:date, 
+      //   event_time:time 
+      // });
 
-      console.log("Email sent:", response.data.message);
+      // console.log("Email sent:", response.data.message);
       alert('Your Booking has confirmed!')
 
       setFormData({

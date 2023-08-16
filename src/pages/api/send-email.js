@@ -9,10 +9,10 @@ export default async (req, res) => {
       throw new Error("SendGrid API key not provided");
     }
 
-    // sgMail.setApiKey('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');
+    sgMail.setApiKey(apiKey);
     console.log(email)
     const msg = {
-      to: email,
+      to: 'jas1987leo@gmail.com',
       from: {
         name: "Qatar Expo 2023", // Replace with your desired display name
         email: "info@flexemarket.com", // Replace with your verified sender email
