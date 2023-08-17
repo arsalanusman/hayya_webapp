@@ -1,7 +1,7 @@
 'use client'
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import Backbutton from "@/components/ui/backhomebuuton";
+import Backbutton from "@/components/ui/backhomebutton";
 import { useRouter } from "next/navigation";
 import { useSelector, useDispatch } from 'react-redux';
 import { GetServerSideProps, InferGetServerSidePropsType } from "next";

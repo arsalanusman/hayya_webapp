@@ -3,7 +3,7 @@ import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import Backbutton from "@/components/ui/backhomebuuton";
+import Backbutton from "@/components/ui/backhomebutton";
 import { useRouter } from "next/router";
 import type { GetServerSideProps, InferGetServerSidePropsType } from "next";
 import { useTranslation } from "next-i18next";

@@ -9,7 +9,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import { getTranslation } from "../../../helper/utilities";
 import { Authentication } from "../../../helper/enums/authentication";
-import Backbutton from "@/components/ui/backhomebuuton";
+import Backbutton from "@/components/ui/backhomebutton";
 
 type Props = {};
 

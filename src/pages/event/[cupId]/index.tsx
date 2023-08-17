@@ -15,11 +15,12 @@ import aljanoubStadium from "../../../../public/expo-img/aljanoubStadium.jpeg";
 
 import { useRouter } from "next/navigation";
 
-import Backbutton from "@/components/ui/backhomebuuton";
+import Backbutton from "@/components/ui/backhomebutton";
 import { useEffect, useState } from "react";
 import moment from "moment";
 import FullScreenImageModal from "@/components/fullscreen-popup";
 import Booking from "@/components/booking/form";
+import { API_URL } from "@/helper/utilities";
 
 const WorldCupById = ({ event, ticketsData }: any) => {
   const Router = useRouter();
@@ -59,14 +60,13 @@ const WorldCupById = ({ event, ticketsData }: any) => {
     setSelectedSessionTickets(event);
   };
 
-  const handleCheckout = (active:any) => {
-    if(active){
-      setSuccess(true)
-    }else{
-      alert('Please select all required fields')
+  const handleCheckout = (active: any) => {
+    if (active) {
+      setSuccess(true);
+    } else {
+      alert("Please select all required fields");
     }
-  }
-
+  };
 
   return (
     <>
@@ -81,7 +81,15 @@ const WorldCupById = ({ event, ticketsData }: any) => {
           <TopBar />
           <SimpleBanner />
 
-          {success ? <Booking  type='Checkout' name={event.title} session={session} date={moment(event.eventStart).format("Do MMMM YYYY")} time={moment(event.eventStart).format("hh:mm A")}/> : 
+          {success ? (
+            <Booking
+              type="Checkout"
+              name={event.title}
+              session={session}
+              date={moment(event.eventStart).format("Do MMMM YYYY")}
+              time={moment(event.eventStart).format("hh:mm A")}
+            />
+          ) : (
             <div className="my-10">
               <div className="container">
                 <div className="bg-[#F6F6F6] px-8 py-10 rounded-2xl">
@@ -160,13 +168,17 @@ const WorldCupById = ({ event, ticketsData }: any) => {
                                   >
                                     <h4 className="text-lg">{item.title}</h4>
                                     <p className="text-sm text-slate-400">
-                                      {moment(item.sessionStart).format("D MMM")}{" "}
+                                      {moment(item.sessionStart).format(
+                                        "D MMM"
+                                      )}{" "}
                                       <br />
                                       {moment(item.sessionStart).format(
                                         "hh:mm A"
                                       )}{" "}
                                       -{" "}
-                                      {moment(item.sessionEnd).format("hh:mm A")}
+                                      {moment(item.sessionEnd).format(
+                                        "hh:mm A"
+                                      )}
                                     </p>
                                   </li>
                                 ))}
@@ -185,7 +197,9 @@ const WorldCupById = ({ event, ticketsData }: any) => {
                                     (item: any, index: number) => (
                                       <li
                                         key={index}
-                                        onClick={() => handleSelectCategory(item)}
+                                        onClick={() =>
+                                          handleSelectCategory(item)
+                                        }
                                         className={
                                           "border hover:border-4 rounded-md text-center p-2 bg-white cursor-pointer " +
                                           (selectedSessionTickets &&
@@ -194,7 +208,9 @@ const WorldCupById = ({ event, ticketsData }: any) => {
                                             : "border-2")
                                         }
                                       >
-                                        <h4 className="text-lg">{item.title}</h4>
+                                        <h4 className="text-lg">
+                                          {item.title}
+                                        </h4>
                                       </li>
                                     )
                                   )}
@@ -226,7 +242,8 @@ const WorldCupById = ({ event, ticketsData }: any) => {
                                               <button
                                                 className="px-2 bg-gray-400 text-white focus:outline-none"
                                                 onClick={() =>
-                                                  adult > 0 && setAdult(adult - 1)
+                                                  adult > 0 &&
+                                                  setAdult(adult - 1)
                                                 }
                                               >
                                                 -
@@ -253,7 +270,7 @@ const WorldCupById = ({ event, ticketsData }: any) => {
                               )}
                             </>
                           ) : (
-                            <p>No Tickets Avalable</p>
+                            <p>No Tickets Available</p>
                           )}
                         </>
                       ) : (
@@ -280,8 +297,15 @@ const WorldCupById = ({ event, ticketsData }: any) => {
                     </div>
                   </div>
                   <div className="text-center py-5">
-                  <button onClick={()=>handleCheckout(adult !== 0)} className={" text-white py-3 px-[60px] rounded-[20px]" + (adult === 0 ? ' bg-gray-300':' bg-[#881A38]')}>
-                      Continue</button>
+                    <button
+                      onClick={() => handleCheckout(adult !== 0)}
+                      className={
+                        " text-white py-3 px-[60px] rounded-[20px]" +
+                        (adult === 0 ? " bg-gray-300" : " bg-[#881A38]")
+                      }
+                    >
+                      Continue
+                    </button>
                   </div>
                 </div>
                 {showModal && (
@@ -292,8 +316,7 @@ const WorldCupById = ({ event, ticketsData }: any) => {
                 )}
               </div>
             </div>
-          }
-
+          )}
         </div>
       </div>
     </>
@@ -302,15 +325,24 @@ const WorldCupById = ({ event, ticketsData }: any) => {
 
 export async function getServerSideProps(context: any) {
   console.log(context, "context");
+
+  const headers = {
+    headers: {
+      clientType: "web",
+    },
+  };
+
   // Fetch event details using the provided API endpoint and event ID
   const eventId = context.query.cupId; // Update with the specific event ID
   const response = await fetch(
-    `http://ems-api-dev.microsysx.com/api/event/${eventId}`
+    `${API_URL}/event/${eventId}`,
+    headers
   );
-  const ticketReponse = await fetch(
-    `http://ems-api-dev.microsysx.com/api/eventsession/ticketsinfobyeid/${eventId}`
+  const ticketResponse = await fetch(
+    `${API_URL}/eventsession/ticketsinfobyeid/${eventId}`,
+    headers
   );
-  const ticketsData = await ticketReponse.json();
+  const ticketsData = await ticketResponse.json();
   const event = await response.json();
 
   return {

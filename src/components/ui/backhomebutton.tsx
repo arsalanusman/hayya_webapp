@@ -5,10 +5,10 @@ import arHeader from "../../../public/locales/ar/header.json";
 import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
 
-export default function backhomebuuton() {
+export default function backhomebutton() {
   const router = useRouter();
-  const { t } = useTranslation('header');
-  const footerLanguage:any = router.locale === 'ar' ? arHeader : enHeader;
+  const { t } = useTranslation("header");
+  const footerLanguage: any = router.locale === "ar" ? arHeader : enHeader;
 
   return (
     <Link href="/">

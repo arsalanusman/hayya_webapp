@@ -4,7 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 
-import Backbutton from "@/components/ui/backhomebuuton";
+import Backbutton from "@/components/ui/backhomebutton";
 import moment from "moment";
 import {
   Select,
@@ -24,6 +24,7 @@ import { cn } from "@/lib/utils";
 import { format } from "date-fns";
 import { CalendarIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { API_URL } from "@/helper/utilities";
 
 // ... (other imports)
 
@@ -149,42 +150,41 @@ const WorldCup = ({ events }: any) => {
                   href={`/event/${event.id}`}
                   className="lg:col-span-4 sm:col-span-6 col-span-12"
                 >
-               
-                    {event.gallery && event.gallery.length > 0 ? (
-                      <div
+                  {event.gallery && event.gallery.length > 0 ? (
+                    <div
                       className="card mb-3 overflow-hidden bg-no-repeat bg-cover sm:bg-bottom bg-center min-h-[236px] rounded-3xl relative"
-                        style={{
-                          backgroundImage: `url(${event.gallery[0].mediaUrl})`,
-                        }}
-                      >
-                        <div className="absolute bottom-[0rem] px-4 py-3 w-full bg-[#000] bg-opacity-70">
-                          <h3 className="text-[24px] text-[#ffffff] font-bold">
-                            {event.title}
-                          </h3>
-                          <p className="text-[#ffffff] text-[14px]">
-                            {moment(event.eventStart).format("D MMM")} |{" "}
-                            {moment(event.eventStart).format("hh:mm A")} -{" "}
-                            {moment(event.eventEnd).format("hh:mm A")}
-                          </p>
-                        </div>
+                      style={{
+                        backgroundImage: `url(${event.gallery[0].mediaUrl})`,
+                      }}
+                    >
+                      <div className="absolute bottom-[0rem] px-4 py-3 w-full bg-[#000] bg-opacity-70">
+                        <h3 className="text-[24px] text-[#ffffff] font-bold">
+                          {event.title}
+                        </h3>
+                        <p className="text-[#ffffff] text-[14px]">
+                          {moment(event.eventStart).format("D MMM")} |{" "}
+                          {moment(event.eventStart).format("hh:mm A")} -{" "}
+                          {moment(event.eventEnd).format("hh:mm A")}
+                        </p>
                       </div>
-                    ) : (
-                      <div
+                    </div>
+                  ) : (
+                    <div
                       className="card mb-3 overflow-hidden bg-no-repeat bg-cover sm:bg-bottom bg-center min-h-[236px] rounded-3xl relative"
-                       style={{ backgroundImage: `url(/img/fallback.png)` }}>
-                        <div className="absolute bottom-[0rem] px-4 py-3 w-full bg-[#000] bg-opacity-70">
-                          <h3 className="text-[24px] text-[#ffffff] font-bold">
-                            {event.title}
-                          </h3>
-                          <p className="text-[#ffffff] text-[14px]">
-                            {moment(event.eventStart).format("D MMM")} |{" "}
-                            {moment(event.eventStart).format("hh:mm A")} -{" "}
-                            {moment(event.eventEnd).format("hh:mm A")}
-                          </p>
-                        </div>
+                      style={{ backgroundImage: `url(/img/fallback.png)` }}
+                    >
+                      <div className="absolute bottom-[0rem] px-4 py-3 w-full bg-[#000] bg-opacity-70">
+                        <h3 className="text-[24px] text-[#ffffff] font-bold">
+                          {event.title}
+                        </h3>
+                        <p className="text-[#ffffff] text-[14px]">
+                          {moment(event.eventStart).format("D MMM")} |{" "}
+                          {moment(event.eventStart).format("hh:mm A")} -{" "}
+                          {moment(event.eventEnd).format("hh:mm A")}
+                        </p>
                       </div>
-                    )}
-                  
+                    </div>
+                  )}
                 </Link>
               ))}
           </div>
@@ -193,19 +193,13 @@ const WorldCup = ({ events }: any) => {
     </>
   );
 };
-
 export async function getServerSideProps() {
   const headers = {
-    headers: {
-      clientType: "web",
-    },
+    clientType: "web",
   };
 
   // Fetch events from the API with the specified headers
-  const response = await fetch(
-    "http://ems-api-dev.microsysx.com/api/event",
-    headers
-  );
+  const response = await fetch(`${API_URL}/event`, { headers });
   const data = await response.json();
 
   return {

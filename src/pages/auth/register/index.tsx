@@ -9,7 +9,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import Link from "next/link";
-import Backbutton from "@/components/ui/backhomebuuton";
+import Backbutton from "@/components/ui/backhomebutton";
 import { Router, useRouter } from "next/router";
 import { Authentication } from "@/helper/enums/authentication";
 
