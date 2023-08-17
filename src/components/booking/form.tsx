@@ -61,9 +61,6 @@ const Booking = ({ type, name, session, date, time }: any) => {
       //   event_time:time
       // });
 
-      // console.log("Email sent:", response.data.message);
-      alert("Your Booking has confirmed!");
-
       setFormData({
         firstName: "",
         lastName: "",
