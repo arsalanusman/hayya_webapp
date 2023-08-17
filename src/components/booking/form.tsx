@@ -74,7 +74,7 @@ const Booking = ({ type, name, session, date, time }: any) => {
       // Redirect to a confirmation page or show a success message
 
       window.location.href =
-        "https://pay.sandbox.checkout.com/page/hpp_TvSG2Zqjm56y?_pcf";
+        "https://pay.microsysx.com/Checkout/PaymentCheckout?o=DFtm8Kjm/44J5jzFeNooYRjSvHwu+mYndCrQH4TzNkZfA8jWvj+6ytKKq3T6eYEGXD4fUphVyIFBgQp/CJ3vDI338q8UQsY0TxfuzqDGY8B0bAlJmisbcVLxYQ7DdbPq9sIYc9q+z8aGaTZjF4WoHg==";
     } catch (error) {
       // Handle errors
       console.error("Error:", error);
