@@ -154,17 +154,19 @@
   "slides": [
     {
       "title": "01",
+      "heading": "Welcome to Hayya",
       "subTitle": "the HAYYA EXPerience",
-      "expoTitle": "Doha Expo 2023",
+      "expoTitle": "Hayya Experience",
       "info": "INFORMATION",
-      "description": "The International Horticultural Expo 2023 will be hosted by the State of Qatar. Located on the west of Doha city, 2,5km from West Bay, 3,5km from Doha Port and about 12km away from HIA.",
+      "description": "Discover a world of services with your Hayya Card, from accommodation to transportation, health insurance, and access to events.",
       "imageUrl": "/expo-img/banner01.png",
       "imageSrc": "/expo-img/qatars01.png"
     },
     {
       "title": "02",
+      "heading": "Qatar Expo 2023",
       "subTitle": "the HAYYA EXPerience",
-      "expoTitle": "Planning a Road Trip?",
+      "expoTitle": "Doha Expo 2023",
       "info": "INFORMATION",
       "description": "GCC residents can pre-register their vehicles with their beloved accompanying passengers and save  time and effort at Qatar’s Abu-Samra border checkpoint.",
       "imageUrl": "/expo-img/banner02.png",
@@ -172,6 +174,7 @@
     },
     {
       "title": "03",
+      "heading": "AFC Asian Cup 2023",
       "subTitle": "the HAYYA EXPerience",
       "expoTitle": "AFC Asian Cup 2023",
       "info": "INFORMATION",
@@ -181,6 +184,7 @@
     },
     {
       "title": "04",
+      "heading": "Grand Prix 2023",
       "subTitle": "the HAYYA EXPerience",
       "expoTitle": "Grand Prix  2023",
       "info": "INFORMATION",

@@ -79,7 +79,7 @@ const FeaturedProjects = () => {
             >
               <div className='text'>
                 <h4>{slide.subTitle}</h4>
-                <h1>{slide.expoTitle}</h1>
+                <h1>{slide.heading}</h1>
                 <p>{slide.description}</p>
                 <button>Learn More</button>
               </div>

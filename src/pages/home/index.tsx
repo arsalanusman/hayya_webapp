@@ -44,7 +44,7 @@ const HomePage =  () => {
         <Banner/>   
         <CarouselSlider />
         <Journey/>
-        <Apply/>
+        {/* <Apply/> */}
         <Events/>
         <Mobileapp/>
         </div>

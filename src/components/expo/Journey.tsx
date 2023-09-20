@@ -14,7 +14,7 @@ const Journey = () => {
     router.locale === "ar" ? arHomepage : enHomepage;
   const { title, subtitle, journeyBoxes } = homepageLanguage.journeySection;
   return (
-    <div className={'Journey-section ' + router.locale} >
+    <div className={'Journey-section Apply-section ' + router.locale} >
     <div className='container mx-auto'>
       <div className='expo-heading '>
         <div className='get flex gap-2 justify-center mb-3'>
