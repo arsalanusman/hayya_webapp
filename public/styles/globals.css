@@ -142,7 +142,7 @@ input.PhoneInputInput {
   width: 30rem !important; 
 }
 .header {
-  background: #6b57d4;
+  /* background: #6b57d4; */
 }
 .long-border:before{
 content: "";
