@@ -159,8 +159,8 @@
       "expoTitle": "Hayya Experience",
       "info": "INFORMATION",
       "description": "Discover a world of services with your Hayya Card, from accommodation to transportation, health insurance, and access to events.",
-      "imageUrl": "/expo-img/banner01.png",
-      "imageSrc": "/expo-img/qatars01.png"
+      "imageUrl": "/img/slides/welcome-bg.svg",
+      "imageSrc": "/img/slides/welcome.svg"
     },
     {
       "title": "02",
@@ -169,8 +169,8 @@
       "expoTitle": "Doha Expo 2023",
       "info": "INFORMATION",
       "description": "GCC residents can pre-register their vehicles with their beloved accompanying passengers and save  time and effort at Qatar’s Abu-Samra border checkpoint.",
-      "imageUrl": "/expo-img/banner02.png",
-      "imageSrc": "/expo-img/qatars02.png"
+      "imageUrl": "/img/slides/expo-bg.svg",
+      "imageSrc": "/img/slides/expo.svg"
     },
     {
       "title": "03",
@@ -179,8 +179,8 @@
       "expoTitle": "AFC Asian Cup 2023",
       "info": "INFORMATION",
       "description": "The AFC Asian Cup Qatar 2023™ is all set to take place in Qatar and will see Asia’s top 24 nations eyeing one of the most prestigious titles in Asian football.",
-      "imageUrl": "/expo-img/banner03.png",
-      "imageSrc": "/expo-img/qatars03.png"
+      "imageUrl": "/img/slides/asian-bg.svg",
+      "imageSrc": "/img/slides/asian.svg"
     },
     {
       "title": "04",
@@ -189,8 +189,8 @@
       "expoTitle": "Grand Prix  2023",
       "info": "INFORMATION",
       "description": "Get up to speed with everything you need to know about the 2023 Qatar Grand Prix, which takes place at the 5.38-kilometre Lusail International Circuit on Sunday, October 8.",
-      "imageUrl": "/expo-img/banner04.png",
-      "imageSrc": "/expo-img/qatars04.png"
+      "imageUrl": "/img/slides/grand-bg.svg",
+      "imageSrc": "/img/slides/grand.svg"
     }
   ]
 }
