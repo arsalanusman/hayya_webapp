@@ -505,7 +505,71 @@
   
     animation: animName01 4s linear infinite;
 }
+.needhelp-button {
+    position: absolute;
+    right: -18px;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/img/needhelp-back.png) center no-repeat;
+    width: fit-content;
+}
 
+.needhelp-button button {
+    transform: rotate(270deg);
+    position: relative;
+    right: -8px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
+.needhelp {
+    background: url(/img/needpopupback.png) center no-repeat !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    background-size: cover !important;
+    width: 100% !important;
+    max-width: 40rem !important;
+    z-index: 9999999 !important;
+}
+.need-content {
+    padding-left: 12em;
+}  
+.need-content h1 {
+    color: #222222;
+    font-size: 34px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 40px;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 20px;
+}
+
+.need-content p {
+    color: #222222;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+.need-boxes {
+    display: grid;
+    grid-template-columns: 16% 58% 15%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0px;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+
+.need-boxes p {
+    font-size: 16px;
+    text-align: left;
+    line-height: 20px;
+}
 @keyframes animName01 {
     0% {
         transform: scale(0.5);

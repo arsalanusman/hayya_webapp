@@ -2,15 +2,23 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
-const banner01 = "/expo-img/banner01.png";
-const banner02 = "/expo-img/banner02.png";
-const banner03 = "/expo-img/banner03.png";
-const banner04 = "/expo-img/banner04.png";
+const boxes01 = "/img/need-boxes01.png";
+const boxes02 = "/img/need-boxes02.png";
+const boxes03 = "/img/need-boxes03.png";
+const boxes04 = "/img/need-boxes04.png";
+const needarow = "/img/needarow.png";
 import enHomepage from "../../../public/locales/en/homepage.json";
 import arHomepage from "../../../public/locales/ar/homepage.json";
 import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
-
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet-need"
 const FeaturedProjects = () => {
   const [nav1, setNav1] = useState(null);
   const [nav2, setNav2] = useState(null);
@@ -120,7 +128,50 @@ const FeaturedProjects = () => {
           ))}
         </Slider>
       </div>
+
+
+   <div className="need-popup">
+      <Sheet>
+        <div className="needhelp-button"><SheetTrigger>Need Help?</SheetTrigger></div>
+        <SheetContent>
+          <SheetHeader>
+            <div className="need-content">
+           
+            <SheetDescription>
+              <h1>How can we help you?</h1>
+              <p> Tell us what you’re hoping to do here..</p>
+              <br></br> <br></br> 
+              <div className="need-boxes">
+                <div> <Image src={boxes01} width={44} height={44} alt='Picture of the author'/></div>  
+                <div><p>I’m Seeking to Apply for Hayya</p></div>
+                <div><Image src={needarow} width={42} height={42} alt='Picture of the author'/></div>
+              </div>
+              <div className="need-boxes">
+                <div> <Image src={boxes02} width={44} height={44} alt='Picture of the author'/></div>  
+                <div><p>I Want to pre-register for Abu-Samara Border</p></div>
+                <div><Image src={needarow} width={42} height={42} alt='Picture of the author'/></div>
+              </div>
+              <div className="need-boxes">
+                <div> <Image src={boxes03} width={44} height={44} alt='Picture of the author'/></div>  
+                <div><p>I want to Host Family & Friends</p></div>
+                <div><Image src={needarow} width={42} height={42} alt='Picture of the author'/></div>
+              </div>
+              <div className="need-boxes">
+                <div> <Image src={boxes04} width={44} height={44} alt='Picture of the author'/></div>  
+                <div><p>I Want to Upload Accommodation Proof</p></div>
+                <div><Image src={needarow} width={42} height={42} alt='Picture of the author'/></div>
+              </div>
+
+            </SheetDescription>
+            </div>
+          </SheetHeader>
+        </SheetContent>
+      </Sheet>
+      </div>
+
+
     </div>
+
   );
 };
 export default FeaturedProjects;
