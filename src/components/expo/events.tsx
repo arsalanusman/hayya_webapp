@@ -15,12 +15,36 @@ const Events = () => {
   const settings = {
     dots: true,
     infinite: true,
-    arrows: false,
     speed: 900,
     slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 6000,
+    arrows: true, // Show arrows
+    prevArrow: (
+      // Custom prev arrow
+      <div className="">
+        <Image
+          src="/img/slides/Union.png"
+          width={40}
+          height={40}
+          alt="Left Arrow"
+          className="arrow-left z-10 right-20 absolute -top-20  border border-black rounded-full p-3 transition duration-300 hover:bg-yellow-500 cursor-pointer"
+        />
+      </div>
+    ),
+    nextArrow: (
+      // Custom next arrow
+      <div className="arrow-right">
+        <Image
+          src="/img/slides/Union.png"
+          width={40}
+          height={40}
+          alt="Right Arrow" className="rotate-180 absolute -top-20 right-5  arrow-left border border-black rounded-full p-3 transition duration-300 hover:bg-yellow-500 cursor-pointer"
+        
+        />
+      </div>
+    ),
     responsive: [
      
       {

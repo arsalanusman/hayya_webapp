@@ -568,6 +568,35 @@
 .need-boxes img {
     cursor: pointer;
 }
+.react-multi-carousel-track {
+    top:60px
+}
+
+.sd{
+    position: relative;
+    top: 40px;
+}
+.custom-left-arrow{
+    border: 1px solid #000;
+    position: absolute;
+    z-index: 100;
+    right:5px;
+    top:0px;
+    padding: 0.8rem;
+    border-radius: 100%;
+    transform: rotate(180deg);
+    width:40px;
+}
+.custom-right-arrow{
+    border: 1px solid #000;
+    position: absolute;
+    z-index: 100;
+    right: 70px;
+    top:0px;
+    padding: 0.8rem;
+    border-radius: 100%;
+    width:40px;
+}
 
 @keyframes animName01 {
     0% {

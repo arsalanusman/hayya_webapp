@@ -43,7 +43,7 @@ const HomePage =  () => {
             <div className=" bg-[#F1F1F1] relative " >
         <Banner/>   
         <CarouselSlider />
-        <Journey/>
+        {/* <Journey/> */}
         {/* <Apply/> */}
         <Events/>
         <Mobileapp/>

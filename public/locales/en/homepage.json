@@ -102,7 +102,8 @@
     "getAppNow": "Get the App NOW!",
     "appStoreImages": [
       { "imageUrl": "/expo-img/store01.png", "altText": "App Store 01" },
-      { "imageUrl": "/expo-img/store02.png", "altText": "App Store 02" }
+      { "imageUrl": "/expo-img/store02.png", "altText": "App Store 02" },
+      { "imageUrl": "/img/appgallery.png", "altText": "App Gallery" }
     ]
   },
   "servicesSection": {
@@ -160,7 +161,7 @@
       "info": "INFORMATION",
       "description": "Discover a world of services with your Hayya Card, from accommodation to transportation, health insurance, and access to events.",
       "imageUrl": "/img/slides/welcome-bg.svg",
-      "imageSrc": "/img/slides/welcome.svg"
+      "imageSrc": "/img/slides/welcome_2.svg"
     },
     {
       "title": "02",
@@ -168,7 +169,7 @@
       "subTitle": "the HAYYA EXPerience",
       "expoTitle": "Doha Expo 2023",
       "info": "INFORMATION",
-      "description": "GCC residents can pre-register their vehicles with their beloved accompanying passengers and save  time and effort at Qatar’s Abu-Samra border checkpoint.",
+      "description": "The International Horticultural Expo 2023 will be hosted by the State of Qatar. Located on the west of Doha city.",
       "imageUrl": "/img/slides/expo-bg.svg",
       "imageSrc": "/img/slides/expo.svg"
     },
@@ -188,9 +189,38 @@
       "subTitle": "the HAYYA EXPerience",
       "expoTitle": "Grand Prix  2023",
       "info": "INFORMATION",
-      "description": "Get up to speed with everything you need to know about the 2023 Qatar Grand Prix, which takes place at the 5.38-kilometre Lusail International Circuit on Sunday, October 8.",
+      "description": "Get up to speed with everything you need to know about the 2023 Qatar Grand Prix, which takes place at the 5.38-kilometre Lusail International.",
       "imageUrl": "/img/slides/grand-bg.svg",
       "imageSrc": "/img/slides/grand.svg"
     }
-  ]
+  ],
+  "hayaForm":{
+    "needHelp":"Need Help?",
+    "step_1":{
+      "heading":"How can we help you?",
+      "subHeading":"Tell us what you’re hoping to do here..",
+      "level_1":"I’m Seeking to Apply for Hayya",
+      "level_2":"I Want to pre-register for Abu-Samara Border",
+      "level_3":"I want to Host Family & Friends",
+      "level_4":"I Want to Upload Accommodation Proof"
+    },
+    "step_2":{
+      "heading":"Applying for Hayya",
+      "subHeading":"Tell us a bit more about yourself, so we can decide your visa options",
+      "level_1":"What’s your nationality?",
+      "level_2":"Are you a US. UK, or EU permanent resident or a visa holder?",
+      "level_3":"Are you a GCC resident?",
+      "level_4":"Do you have a Hayya Voucher?",
+      "yes":"yes",
+      "no":"no"
+    },
+    "step_3":{
+      "heading":"You Elegible for..",
+      "subHeading":"These are your Visa options to Qatar.",
+      "level_1":"Tourist Entry (A1)",
+      "level_2":"GCC Resident Entry (A2)",
+      "level_3":"Entry with ETA (A3)",
+      "level_4":"Hayya with Me (C)"
+    }
+  }
 }

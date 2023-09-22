@@ -10,6 +10,28 @@ import { useRouter } from "next/router";
 import { useTranslation } from "react-i18next";
 
 
+// Define custom arrow components
+const CustomLeftArrow = ({ onClick }:any) => (
+  <button
+    onClick={onClick}
+    className="custom-arrow custom-left-arrow"
+    aria-label="Previous"
+  >
+    {/* Add your custom left arrow icon or image here */}
+    <Image src="/img/slides/Union.png" width={40} height={40} alt="Previous"  />
+  </button>
+);
+
+const CustomRightArrow = ({ onClick }:any) => (
+  <button
+    onClick={onClick}
+    className="custom-arrow custom-right-arrow"
+    aria-label="Next"
+  >
+    {/* Add your custom right arrow icon or image here */}
+    <Image src="/img/slides/Union.png" width={40} height={40} alt="Next" />
+  </button>
+);
 
 const CarouselSlider = () => {
   const router = useRouter();
@@ -36,7 +58,7 @@ const CarouselSlider = () => {
   return (
     <div className='services-section'>
       <div className='container mx-auto'>
-        <div className='expo-heading '>
+        <div className='expo-heading sd'>
           <div className='get flex gap-2 justify-center mb-3'>
             <Image className='expo-headingimg02' src='/expo-img/Star.svg' width={16} height={16} alt='Picture of the author' />{' '}
             <div className='text-[16px] font-semibold tracking-[.1em] uppercase'>{heading}</div>
@@ -47,7 +69,9 @@ const CarouselSlider = () => {
         <Carousel
           responsive={responsive}
           additionalTransfrom={0}
-          arrows={false}
+          customLeftArrow={<CustomLeftArrow />}
+          customRightArrow={<CustomRightArrow />}
+          arrows={true}
           showDots
           slidesToSlide={1}
           infinite

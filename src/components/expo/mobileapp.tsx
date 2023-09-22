@@ -24,11 +24,15 @@ const Mobileapp = () => {
             </div>
             <div className='Merriweather text-3xl sm:text-5xl font-extrabold mb-4'>{appTitle}</div>
             <Image src='/expo-img/line.png' width={162} height={10} alt='Picture of the author' className='mx-auto expo-headingimg01' />{' '}
+          
           </div>
+
+          
           <div className='mobileapp-main'>
             <div className='lft'>
               <Image src='/expo-img/iPhone.png' width={496} height={687} alt='Picture of the author' />
             </div>
+            
             <div className='rgt'>
               <h1>{appDescription}</h1>
               <p>{downloadDescription}</p>
