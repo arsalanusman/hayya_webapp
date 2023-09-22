@@ -299,7 +299,7 @@
 .select-main select {
     width: 100%;
     height: 100%;
-    padding: 24px 0px;
+    padding: 20px 0px;
     cursor: pointer;
   
 
@@ -320,7 +320,7 @@
 .select-main .select-box {
     display: flex;
     flex-direction: column;
-    width: 26%;
+    /* width: 26%; */
     gap: 10px;
 }
 .Apply-box-main {
@@ -548,18 +548,12 @@
     margin-bottom: 20px;
 }
 
-.need-content p {
-    color: #222222;
-    font-size: 18px;
-    text-align: center;
-    font-weight: 400;
-}
 .need-boxes {
     display: grid;
     grid-template-columns: 16% 58% 15%;
     justify-content: space-between;
     align-items: center;
-    margin: 25px 0px;
+    /* margin: 25px 0px; */
     background: #fff;
     border-radius: 20px;
     padding: 20px 20px;
@@ -570,6 +564,11 @@
     text-align: left;
     line-height: 20px;
 }
+
+.need-boxes img {
+    cursor: pointer;
+}
+
 @keyframes animName01 {
     0% {
         transform: scale(0.5);
