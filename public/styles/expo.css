@@ -658,7 +658,9 @@
     .select-main {gap: 20px;flex-direction: column;margin: 0px 0px;} 
     .select-main .select-box {width: 100%;}
     .mobileapp-main {flex-direction: column;}
-    .mobileapp-section:after {width: 100%;height: 20%;}
+    .mobileapp-section:after {width: 100%;
+        height: 50%;
+        top: 50%;}
     .Apply-box-main .Apply-box.one:after{display: none;}
     .Apply-box-main .Apply-box {margin-bottom: 30px;}
     .mobileapp-section {padding-top: 0;padding-bottom: 30px;}
@@ -673,6 +675,8 @@
         padding-left: 0em;
     }  
     .needhelp{background:#f1f1f1 !important}
+    .custom-arrow, .slick-arrow{display:none !important;}
+    .services-section .react-multi-carousel-list {padding-bottom: 100px;}
 }
 
 .fullscreen-modal {

@@ -58,7 +58,7 @@ export default function Header() {
           </li>
         </ul>
         </div>
-        <div className="sm:invisible ">
+        <div className="sm:invisible mobile_menu">
           <Sheet >
             <SheetTrigger> 
               <Image
@@ -77,9 +77,11 @@ export default function Header() {
                     <li className="mb-4 pb-1 border-b-[1px] border-[#d0d0d0]">
                       <Link href="/">{t(footerLanguage["menu-item-1"])}</Link>
                     </li>
-                   
-                    <li className="mb-4 pb-1 border-b-[1px] border-[#d0d0d0]">
-                      <Link href="/faq">{t(footerLanguage["menu-item-2"])}</Link>
+                    <li className="hover:text-[#d5cc65] ">
+                      <Link href="/profile">{t(footerLanguage["menu-item-2"])}</Link>
+                    </li>
+                    <li className="hover:text-[#d5cc65] ">
+                      <Link href="/profile">{t(footerLanguage["menu-item-3"])}</Link>
                     </li>
                     <li className="flex justify-center align-middle">
                     <Image
