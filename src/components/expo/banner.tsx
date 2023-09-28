@@ -49,7 +49,7 @@ const FeaturedProjects = () => {
     speed: 900,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     fade: true,
     autoplaySpeed: 6000,
     cssEase: "linear",
@@ -88,7 +88,7 @@ const FeaturedProjects = () => {
             <div
               className='banner-main'
               style={{
-                background: `linear-gradient(359deg,rgb(0 0 0 / 29%) 50%,rgb(0 0 0 / 63%) 100%,rgb(0 0 0 / 16%) 0), url(${slide.imageUrl})`,
+                background: `linear-gradient(74deg, rgba(0, 0, 0, 0.75) -58.62%, rgba(0, 0, 0, 0.73) 12.98%, rgba(0, 0, 0, 0.56) 97.42%, rgba(0, 0, 0, 0.49) 295.08%, rgba(0, 0, 0, 0.00) 607.16%), url(${slide.imageUrl})`,
               }}
             >
               <div className='text'>
@@ -101,7 +101,7 @@ const FeaturedProjects = () => {
                 <div>
                   <Image
                     src={slide.imageSrc}
-                    width={index == 0 ? 340 :292}
+                    width={index == 0 ? 440 :292}
                     height={451}
                     alt='Picture of the author'
                     className='img-01'

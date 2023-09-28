@@ -35,7 +35,7 @@ export default function Header() {
       </div>
       <div className="flex items-end justify-end">
         <div className="xl:block 2xl:block lg:block md:block  sm:block hidden">
-        <ul className=" flex justify-between items-center gap-2 text-sm text-white">
+        <ul className=" flex justify-between items-center gap-3 text-sm text-white">
           <li className="hover:text-[#d5cc65] " >
             <Link href={'/'}>{t(footerLanguage["menu-item-1"])}</Link>
           </li>
@@ -47,20 +47,20 @@ export default function Header() {
               alt="Picture of the author"
             />
           </li>
-          <li className="hover:text-[#d5cc65] ">
+          {/* <li className="hover:text-[#d5cc65] ">
             <Link href={'/faq'}>{t(footerLanguage["menu-item-2"])}</Link>
-          </li>
+          </li> */}
           <li className="hover:text-[#d5cc65] ">
             <Link href="/profile">{t(footerLanguage["menu-item-3"])}</Link>
           </li>
-          <li className="flex justify-center align-middle ">
+          {/* <li className="flex justify-center align-middle ">
             <Image
               src="/img/Stars.svg"
               width={8}
               height={8}
               alt="Picture of the author"
             />
-          </li>
+          </li> */}
           <li className="bg-[#d5cc65]  gap-2 text-black p-3 transition delay-[3000ms] duration-300 ease-in-out  font-semibold rounded-2xl 	hover:bg-[#222222] hover:text-[#fff]">
             <Link href={'/auth/login'} className="p-3 pl-8 pr-8">{t(footerLanguage["menu-item-0"])}</Link>
           </li>
@@ -91,14 +91,15 @@ export default function Header() {
                     <li className="hover:text-[#d5cc65] ">
                       <Link href="/profile">{t(footerLanguage["menu-item-3"])}</Link>
                     </li>
-                    <li className="flex justify-center align-middle">
+                    {/* <li className="flex justify-center align-middle">
                     <Image
                       src="/img/Stars.svg"
                       width={8}
                       height={8}
                       alt="Picture of the author"
                     />
-                  </li>
+                  </li> */}
+                  <br></br>
                     <li className="bg-[#d5cc65] text-center text-black p-3 transition delay-[3000ms] duration-300 ease-in-out  font-semibold rounded-2xl 	hover:bg-[#222222] hover:text-[#fff]">
                     <Link href="/auth/login" className="p-3 pl-8 pr-8">{t(footerLanguage["menu-item-0"])}</Link>
                   </li>
