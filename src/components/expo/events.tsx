@@ -29,7 +29,7 @@ const Events = () => {
           width={40}
           height={40}
           alt="Left Arrow"
-          className="arrow-left z-10 right-20 absolute -top-20  border border-black rounded-full p-3 transition duration-300 hover:bg-yellow-500 cursor-pointer"
+          className="arrow-left z-10 right-20 absolute -top-20  border border-black rounded-full p-3 transition duration-300  hover:bg-[#d5cc65] hover:border-0 cursor-pointer"
         />
       </div>
     ),
@@ -40,7 +40,7 @@ const Events = () => {
           src="/img/slides/Union.png"
           width={40}
           height={40}
-          alt="Right Arrow" className="rotate-180 absolute -top-20 right-5  arrow-left border border-black rounded-full p-3 transition duration-300 hover:bg-yellow-500 cursor-pointer"
+          alt="Right Arrow" className="rotate-180 absolute -top-20 right-5  arrow-left border border-black rounded-full p-3 transition duration-300 hover:bg-[#d5cc65] hover:border-0 cursor-pointer"
         
         />
       </div>
@@ -83,6 +83,7 @@ const Events = () => {
               <div className='events-box' style={{direction:router.locale === "ar" ? 'rtl':'ltr'}}>
                 <Image src={event.imageUrl} width={278} height={278} alt='Picture of the author' className='mx-auto' />
                 <h2>{event.eventName}</h2>
+                <h2 style={{marginTop:5}}>{event.year}</h2>
                 <p>{event.eventDate}</p>
               </div>
             </div>

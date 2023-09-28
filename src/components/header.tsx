@@ -53,6 +53,14 @@ export default function Header() {
           <li className="hover:text-[#d5cc65] ">
             <Link href="/profile">{t(footerLanguage["menu-item-3"])}</Link>
           </li>
+          <li className="flex justify-center align-middle ">
+            <Image
+              src="/img/Stars.svg"
+              width={8}
+              height={8}
+              alt="Picture of the author"
+            />
+          </li>
           <li className="bg-[#d5cc65]  gap-2 text-black p-3 transition delay-[3000ms] duration-300 ease-in-out  font-semibold rounded-2xl 	hover:bg-[#222222] hover:text-[#fff]">
             <Link href={'/auth/login'} className="p-3 pl-8 pr-8">{t(footerLanguage["menu-item-0"])}</Link>
           </li>

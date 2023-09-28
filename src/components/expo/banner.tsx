@@ -9,7 +9,7 @@ const boxes04 = "/img/need-boxes04.png";
 const icon = "/img/icon.png";
 const icon2 = "/img/icon-1.png";
 const icon3 = "/img/icon3.png";
-const icon4 = "/img/need-boxes04.png";
+const icon4 = "/expo-img/journey01.png";
 const needarow = "/img/needarow.png";
 import enHomepage from "../../../public/locales/en/homepage.json";
 import arHomepage from "../../../public/locales/ar/homepage.json";
@@ -95,7 +95,7 @@ const FeaturedProjects = () => {
                 <h4>{slide.subTitle}</h4>
                 <h1>{slide.heading}</h1>
                 <p>{slide.description}</p>
-                <button>Learn More</button>
+                <button>{slide.button}</button>
               </div>
               <div className='banner-imges'>
                 <div>
@@ -248,7 +248,7 @@ const FeaturedProjects = () => {
             <p className="text-center"> {hayaForm.step_3.subHeading}</p>
             <br></br> <br></br> 
             <div className="need-boxes" style={router.locale === "ar" ? {'direction':'ltr'} : {}}>
-              <div> <Image src={icon3} width={44} height={44} alt='Picture of the author'/></div>  
+              <div> <Image src={icon4} width={44} height={44} alt='Picture of the author'/></div>  
               <div><p>{hayaForm.step_3.level_1}</p></div>
               <div><Image src={needarow} width={42} height={42} alt='Picture of the author' onClick={()=>alert('aa')}/></div>
             </div>

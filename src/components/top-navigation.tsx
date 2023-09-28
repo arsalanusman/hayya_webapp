@@ -6,6 +6,7 @@ export default function TopNavigation({params}:any) {
   const router = useRouter();
 
   const language = ['en','ar']
+  const languageShow = ['eng','ar']
 
   const onToggleLanguageClick = (newLocale: string) => {
     const { pathname, asPath, query } = router
@@ -23,7 +24,7 @@ export default function TopNavigation({params}:any) {
             onChange={(x)=>onToggleLanguageClick(x.target.value)}
           >
             {language && language.map((item:any,index:number)=>
-              <option value={item} key={index} selected={router.locale == item}>{item.toUpperCase()}</option>
+              <option value={item} key={index} selected={router.locale == item}>{languageShow[index].toUpperCase()}</option>
             )}
           </select>
         </div>

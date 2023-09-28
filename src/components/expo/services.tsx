@@ -18,7 +18,8 @@ const CustomLeftArrow = ({ onClick }:any) => (
     aria-label="Previous"
   >
     {/* Add your custom left arrow icon or image here */}
-    <Image src="/img/slides/Union.png" width={40} height={40} alt="Previous"  />
+    <Image src="/img/slides/Union.png" width={40} height={40} alt="Previous" 
+     />
   </button>
 );
 

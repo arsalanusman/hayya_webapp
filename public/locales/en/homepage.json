@@ -48,27 +48,32 @@
     "events": [
       {
         "imageUrl": "/expo-img/events01.png",
-        "eventName": "Doha Expo 2023",
+        "eventName": "Doha Expo",
+        "year": "2023",
         "eventDate": "Oct 12, 2023"
       },
       {
         "imageUrl": "/expo-img/events02.png",
-        "eventName": "Doha Expo 2023",
+        "eventName": "Grand Pix",
+        "year": "2023",
         "eventDate": "Oct 12, 2023"
       },
       {
         "imageUrl": "/expo-img/events03.png",
-        "eventName": "Doha Expo 2023",
+        "eventName": "AFC Asian",
+        "year": "Cup 2023",
         "eventDate": "Oct 12, 2023"
       },
       {
         "imageUrl": "/expo-img/events04.png",
-        "eventName": "Doha Expo 2023",
+        "eventName": "Geneva Motor",
+        "year": "Show",
         "eventDate": "Oct 12, 2023"
       },
       {
         "imageUrl": "/expo-img/events01.png",
-        "eventName": "Doha Expo 2023",
+        "eventName": "Doha Expo",
+        "year": "2023",
         "eventDate": "Oct 12, 2023"
       }
     ]
@@ -159,6 +164,7 @@
       "subTitle": "the HAYYA EXPerience",
       "expoTitle": "Hayya Experience",
       "info": "INFORMATION",
+      "button": "Learn More",
       "description": "Discover a world of services with your Hayya Card, from accommodation to transportation, health insurance, and access to events.",
       "imageUrl": "/img/slides/welcome-bg.svg",
       "imageSrc": "/img/slides/welcome_2.svg"
@@ -169,6 +175,7 @@
       "subTitle": "the HAYYA EXPerience",
       "expoTitle": "Doha Expo 2023",
       "info": "INFORMATION",
+      "button": "Learn More",
       "description": "The International Horticultural Expo 2023 will be hosted by the State of Qatar. Located on the west of Doha city.",
       "imageUrl": "/img/slides/expo-bg.svg",
       "imageSrc": "/img/slides/expo.svg"
@@ -179,6 +186,7 @@
       "subTitle": "the HAYYA EXPerience",
       "expoTitle": "AFC Asian Cup 2023",
       "info": "INFORMATION",
+      "button": "Learn More",
       "description": "The AFC Asian Cup Qatar 2023™ is all set to take place in Qatar and will see Asia’s top 24 nations eyeing one of the most prestigious titles in Asian football.",
       "imageUrl": "/img/slides/asian-bg.svg",
       "imageSrc": "/img/slides/asian.svg"
@@ -189,6 +197,7 @@
       "subTitle": "the HAYYA EXPerience",
       "expoTitle": "Grand Prix  2023",
       "info": "INFORMATION",
+      "button": "Pre-Register",
       "description": "Get up to speed with everything you need to know about the 2023 Qatar Grand Prix, which takes place at the 5.38-kilometre Lusail International.",
       "imageUrl": "/img/slides/grand-bg.svg",
       "imageSrc": "/img/slides/grand.svg"

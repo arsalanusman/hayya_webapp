@@ -70,27 +70,32 @@
     "events": [
       {
         "imageUrl": "/expo-img/events01.png",
-        "eventName": "دوحة اكسبو ٢٠٢٣",
+        "eventName": "دوحة اكسبو ",
+        "year": "٢٠٢٣",
         "eventDate": "١٢ اكتوبر ٢٠٢٣"
       },
       {
         "imageUrl": "/expo-img/events02.png",
-        "eventName": "قراند بري ٢٠٢٣",
+        "eventName": "الجائزة الكبرى",
+        "year": "٢٠٢٣",
         "eventDate": "١٢ اكتوبر ٢٠٢٣"
       },
       {
         "imageUrl": "/expo-img/events03.png",
-        "eventName": "كأس آسيا ٢٠٢٣",
+        "eventName": "الاتحاد الآسيوي الآسيوي",
+        "year": "كأس ٢٠٢٣",
         "eventDate": "١٢ اكتوبر ٢٠٢٣"
       },
       {
         "imageUrl": "/expo-img/events04.png",
-        "eventName":"معرض جنيفا للسيارات ٢٠٢٣",
+        "eventName": "جنيف موتور",
+        "year": "يعرض",
         "eventDate": "١٢ اكتوبر ٢٠٢٣"
       },
       {
         "imageUrl": "/expo-img/events01.png",
-        "eventName":"معرض جنيفا للسيارات ٢٠٢٣",
+        "eventName": "دوحة اكسبو ",
+        "year": "٢٠٢٣",
         "eventDate": "١٢ اكتوبر ٢٠٢٣"
       }
     ]
@@ -124,7 +129,8 @@
     "getAppNow": "تحصل على التطبيق الآن!",
     "appStoreImages": [
       { "imageUrl": "/expo-img/store01.png", "altText": "متجر التطبيق 01" },
-      { "imageUrl": "/expo-img/store02.png", "altText": "متجر التطبيق 02" }
+      { "imageUrl": "/expo-img/store02.png", "altText": "متجر التطبيق 02" },
+      { "imageUrl": "/img/appgallery.png", "altText": "App Gallery" }
     ]
   },
   "servicesSection": {
@@ -180,6 +186,7 @@
       "expoTitle": "معرض إكسبو ٢٠٢٣ الدوحة",
       "description": "تستضيف دولة قطر المعرض الدولي 2023. يقع في غرب مدينة الدوحة، على بعد 2.5 كم من الخليج الغربي، و 3.5 كم من ميناء الدوحة, وحوالي 12 كم من مطار حمد الدولي.",
       "info": "معلومات",
+      "button": "يتعلم أكثر",
       "imageUrl": "/expo-img/banner01.png",
       "imageSrc": "/expo-img/qatars01.png"
     },
@@ -188,6 +195,7 @@
       "subTitle": "تجربة هَيّـا",
       "expoTitle": "تخطط لرحلة الى قطر؟",
       "info": "معلومات",
+      "button": "يتعلم أكثر",
       "description": "يمكن للمقيمين في دول مجلس التعاون الخليجي تسجيل سياراتهم مسبقًا مع مسافريهم المحبوبين وتوفير الوقت والجهد عند نقطة تفتيش أبو سمرة الحدودية في قطر.",
       "imageUrl": "/expo-img/banner02.png",
       "imageSrc": "/expo-img/qatars02.png"
@@ -197,6 +205,7 @@
       "subTitle": "تجربة هَيّـا",
       "expoTitle": "كأس آسيا٢٠٢٣",
       "info": "معلومات",
+      "button": "يتعلم أكثر",
       "description": "من المقرر أن تقام بطولة كأس آسيا لكرة القدم قطر ٢٠٢٣ ™ في قطر وستشهد أفضل 24 دولة في آسيا تتطلع إلى الحصول على لقب واحد من أرقى الألقاب في كرة القدم الآسيوية.",
       "imageUrl": "/expo-img/banner03.png",
       "imageSrc": "/expo-img/qatars03.png"
@@ -206,6 +215,7 @@
       "subTitle": "تجربة هَيّـا",
       "expoTitle": "سباق السرعة للفورمولا ١ ٢٠٢٣",
       "info": "معلومات",
+      "button": "التسجيل المسبق",
       "description": "كن على دراية بكل ما تحتاج لمعرفته حول سباق السرعة للفورمولا ٢٠٢٣ ، والذي سيقام على حلبة لوسيل الدولية بطول 5.38 كيلومتر يوم الأحد 8 أكتوبر.",
       "imageUrl": "/expo-img/banner04.png",
       "imageSrc": "/expo-img/qatars04.png"
