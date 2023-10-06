@@ -40,7 +40,7 @@ const ApplicationInformation = () => {
   const dataToSave = useSelector((state:any) => state.data.dataToSave);
   const [isLoading,setIsLoading] = useState(false)
 
-  const [steps, setSteps] = useState(0)
+  const [steps, setSteps] = useState(4)
   const [isActive, setIsActive] = useState(true)
   const [isValidate, setIsValidate] = useState(false)
   const [successValidate, setSuccessValidate] = useState(false);
