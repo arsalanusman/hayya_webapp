@@ -30,7 +30,7 @@ const PayNow = () => {
       if (storedInsurance) {
         let visaFee = {
           name: 'Haya Visa Fee',
-          logoSrc: '/img/qlm.webp',
+          logoSrc: '/img/fee.jpg',
           terms: 'Terms and Conditions',
           price: '200 QAR',
           serviceBreakdown: 'Service Breakdown',
