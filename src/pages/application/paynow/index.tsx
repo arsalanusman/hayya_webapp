@@ -90,9 +90,13 @@ const PayNow = () => {
                       </div>
                     </div>
                     </div>
-                   
-                    <div className="space-y-2 border-t-[3px] pt-10 flex justify-end">
-                    <button className="text-white p-3 pl-8 pr-8 bg-[#d5cc65]   rounded-md" onClick={()=>Router.push('https://pay.sandbox.checkout.com/page/hpp_TvSG2Zqjm56y?_pcf')}>Pay Now</button>
+                    <div className="space-y-2 border-t-[3px] pt-10 flex justify-between">
+                      <button className="text-white p-3 pl-8 pr-8 bg-[#d5cc65] rounded-md" onClick={() => Router.push('/application/payment')}>
+                        Back
+                      </button>
+                      <button className="text-white p-3 pl-8 pr-8 bg-[#d5cc65] rounded-md" onClick={() => Router.push('https://pay.sandbox.checkout.com/page/hpp_TvSG2Zqjm56y?_pcf')}>
+                        Pay Now
+                      </button>
                     </div>
                   </div>
                 </div>
