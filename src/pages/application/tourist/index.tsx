@@ -227,7 +227,7 @@ const ApplicationInformation = () => {
                                   className="bg-[#D5CC65] text-black hover:text-white"
                                   type="submit"
                                   onClick={(e) =>
-                                    Router.push("/application/thankyou")
+                                    Router.push("/application/payment")
                                   }
                                 >
                                   {tr(x.SHARED_LABELS_SUBMIT)}

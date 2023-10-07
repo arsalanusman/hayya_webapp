@@ -154,3 +154,7 @@ width: 290px;
 height: 1;
 background-color: #881A38;
 }
+.header.application{
+    background: #252525 !important;
+    z-index: 999999;
+}

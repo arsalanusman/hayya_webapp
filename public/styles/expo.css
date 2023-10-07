@@ -392,6 +392,7 @@
 .Apply-box-main .Apply-box.one {
     position: relative;
 }
+
 .events-box {padding: 0px 28px;}
 
 .events-box h2 {
@@ -625,6 +626,7 @@
 .react-multi-carousel-dot--active button {
     background-color: #d5cc65 !important;
 }
+
 
 @keyframes animName01 {
     0% {

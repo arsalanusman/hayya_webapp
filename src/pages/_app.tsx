@@ -18,6 +18,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
 
   useEffect(() => {
+    console.log(router.pathname,'router')
     // Update the document body's direction whenever the locale changes
     document.body.setAttribute('dir', router.locale === 'ar' ? 'rtl' : 'ltr');
   }, [router.locale]);
