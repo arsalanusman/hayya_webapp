@@ -29,7 +29,7 @@ const PayNow = () => {
       storedInsurance = localStorage.getItem("selectedInsurance");
       if (storedInsurance) {
         let visaFee = {
-          name: 'Haya Visa Fee',
+          name: 'Visa Fee',
           logoSrc: '/img/fee.jpg',
           terms: 'Terms and Conditions',
           price: '20 QAR',
@@ -75,18 +75,22 @@ const PayNow = () => {
                       ))}
                     </ul>
                     <div className="flex flex-col space-y-2 border-t-[3px] pt-10">
-                      <div className="bg-gray-100 p-4 rounded-lg">
+                    <div className="p-4 rounded-lg">
                       <div className="flex flex-col space-y-2">
                         <div className="flex justify-between">
-                          <p className="font-bold">Security deposit</p>
-                          <p>50.00 QAR</p>
-                        </div>
-                        <hr className="border-t border-gray-400 my-2" />
-                        <div className="flex justify-between">
-                          <p className="font-bold">Total Amount:</p>
-                          <p>100.00 QAR</p>
+                          <p>Security deposit</p>
+                          <p className="font-bold">50.00 QAR</p>
                         </div>
                        
+                      </div>
+                       
+                       </div>
+                      <div className="bg-gray-100 p-4">
+                      <div className="flex flex-col space-y-2">
+                        <div className="flex justify-between">
+                          <p className="font-bold">Total Amount:</p>
+                          <p className="font-bold">100.00 QAR</p>
+                        </div>
                       </div>
                     </div>
                     </div>
