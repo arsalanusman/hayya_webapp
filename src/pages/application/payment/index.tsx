@@ -33,24 +33,24 @@ const Payment = () => {
   let storedInsurance:any;
   const insuranceData = [
     {
-      name: 'Q Life Insurance',
+      name: 'QLM Insurance',
       logoSrc: '/img/qlm.webp',
       terms: 'Terms and Conditions',
-      price: '400 QAR',
+      price: '18 QAR',
       serviceBreakdown: 'Service Breakdown',
     },
     {
-      name: 'Al Koot Insurance',
-      logoSrc: '/img/alkoot.png',
+      name: 'QIC Insurance',
+      logoSrc: '/img/QIC.png',
       terms: 'Terms and Conditions',
-      price: '600 QAR',
+      price: '19 QAR',
       serviceBreakdown: 'Service Breakdown',
     },
     {
-      name: 'Doha Insurance',
-      logoSrc: '/img/doha.png',
+      name: 'Beema Insurance',
+      logoSrc: '/img/beema.jpg',
       terms: 'Terms and Conditions',
-      price: '650 QAR',
+      price: '20 QAR',
       serviceBreakdown: 'Service Breakdown',
     }
     // Add more insurance data items as needed

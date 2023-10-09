@@ -32,7 +32,7 @@ const PayNow = () => {
           name: 'Haya Visa Fee',
           logoSrc: '/img/fee.jpg',
           terms: 'Terms and Conditions',
-          price: '200 QAR',
+          price: '20 QAR',
           serviceBreakdown: 'Service Breakdown',
         }
         setInsuranceData(():any => [ JSON.parse(storedInsurance), visaFee]);
@@ -84,7 +84,7 @@ const PayNow = () => {
                         <hr className="border-t border-gray-400 my-2" />
                         <div className="flex justify-between">
                           <p className="font-bold">Total Amount:</p>
-                          <p>850.00 QAR</p>
+                          <p>100.00 QAR</p>
                         </div>
                        
                       </div>
